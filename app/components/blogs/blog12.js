@@ -12,12 +12,11 @@ const Blog12 = () => {
   // Table of contents data
   const tocItems = [
     { id: "introduction", title: "Introduction" },
-    { id: "role-generative-ai", title: "The Role of Generative AI in Development" },
-    { id: "ai-code-generation", title: "AI and Code Generation" },
-    { id: "debugging-testing", title: "Smarter Debugging and Testing" },
-    { id: "devops-management", title: "Enhancing DevOps and Project Management" },
-    { id: "emerging-frameworks", title: "Emerging AI Development Frameworks" },
-    { id: "final-thoughts", title: "Final Thoughts" },
+    { id: "how-enhances", title: "How Generative AI Enhances Software Development" },
+    { id: "role-ai-driven", title: "The Role of Generative AI in AI-Driven Development" },
+    { id: "future", title: "Future of Generative AI in Software Engineering" },
+    { id: "benefits", title: "Benefits of Generative AI" },
+    { id: "conclusion", title: "Conclusion" },
   ];
 
   // Smooth scroll to section
@@ -147,66 +146,119 @@ const Blog12 = () => {
           </div>
 
           {/* INTRODUCTION */}
-          <section id="introduction" className="scroll-mt-24">
-            <p className="text-white/80 text-xl leading-relaxed mb-10">
-              Artificial intelligence (AI) transforms software development by offering tools and practices that increase efficiency, accuracy, and innovation. AI is transforming software development by <Link href="/code-generation-automation" className="text-secondary hover:text-secondary/80 underline font-medium">automating coding</Link>, simplifying testing, and improving deployment workflows.
+          <section id="introduction" className="scroll-mt-24 mb-10">
+            <p className="text-white/80 text-xl leading-relaxed mb-4">
+              Generative AI is a game-changer in software development, as it provides unparalleled automation and intelligent code generation. The technology employs machine learning algorithms to enhance efficiency, cut down errors, and fast-track software delivery. Being one of the important players in AI-driven software development, generative AI makes the future of coding different.
             </p>
           </section>
 
-          {/* SECTION: Generative AI in Development */}
-          <section id="role-generative-ai" className="scroll-mt-24">
-            <h2 className="text-2xl font-bold text-white mb-4">The Role of Generative AI in Development</h2>
-            <p className="text-white/80 leading-relaxed mb-6">
-              Artificial Intelligence, especially <Link href="/code-generation-automation" className="text-secondary hover:text-secondary/80 underline font-medium">generative AI</Link> and large language models, speeds up the software development process by automating important stages such as idea generation, requirement gathering, coding, and testing.
+          {/* SECTION: How Generative AI Enhances Software Development */}
+          <section id="how-enhances" className="scroll-mt-24 mb-10">
+            <h2 className="text-2xl font-bold text-white mb-4">How Generative AI Enhances Software Development</h2>
+            <p className="text-white/80 leading-relaxed mb-4">
+              Generative AI is simplifying complex engineering processes and driving the latest era in creating software. Here's how it helps:
             </p>
-            <p className="text-white/80 leading-relaxed mb-10">
-              Gen AI works in partnership with human developers to turn ideas into needs. It then translates those requirements into user stories, generates test cases, code, and documentation—accelerating development and improving product quality.
+
+            <div className="space-y-4 mb-6">
+              <div className="bg-primary/40 rounded-lg p-4 border border-secondary/20">
+                <h3 className="text-lg font-semibold text-secondary mb-2">Intelligent Code Completion</h3>
+                <p className="text-white/80 leading-relaxed">
+                  AI-driven tools scan for patterns with the aim of generating optimized code snippets, thus drastically reducing manual coding effort.
+                </p>
+              </div>
+
+              <div className="bg-primary/40 rounded-lg p-4 border border-secondary/20">
+                <h3 className="text-lg font-semibold text-secondary mb-2">Error Detection and Debugging</h3>
+                <p className="text-white/80 leading-relaxed">
+                  AI-driven systems can identify errors and correct them instantly, keeping the vulnerabilities in the software at their minimal levels.
+                </p>
+              </div>
+
+              <div className="bg-primary/40 rounded-lg p-4 border border-secondary/20">
+                <h3 className="text-lg font-semibold text-secondary mb-2">NLP for Coding</h3>
+                <p className="text-white/80 leading-relaxed">
+                  AI understands human languages and converts them into code that the computer then will understand and execute, hence making the work of programming easier.
+                </p>
+              </div>
+
+              <div className="bg-primary/40 rounded-lg p-4 border border-secondary/20">
+                <h3 className="text-lg font-semibold text-secondary mb-2">Improved Maintenance of Software</h3>
+                <p className="text-white/80 leading-relaxed">
+                  Generative AI learns from existing codebases and continuously makes suggestions to improve the quality and maintainability of code.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          {/* SECTION: The Role of Generative AI */}
+          <section id="role-ai-driven" className="scroll-mt-24 mb-10">
+            <h2 className="text-2xl font-bold text-white mb-4">The Role of Generative AI in AI-Driven Software Development</h2>
+            
+            <div className="space-y-4 mb-6">
+              <div className="bg-primary/40 rounded-lg p-4 border border-secondary/20">
+                <h3 className="text-lg font-semibold text-secondary mb-2">Improved Productivity</h3>
+                <p className="text-white/80 leading-relaxed">
+                  Developers can be freed to work at higher levels of problem-solving by leaving more mundane and repetitive tasks to AI.
+                </p>
+              </div>
+
+              <div className="bg-primary/40 rounded-lg p-4 border border-secondary/20">
+                <h3 className="text-lg font-semibold text-secondary mb-2">Smooth Integration with DevOps</h3>
+                <p className="text-white/80 leading-relaxed">
+                  AI-driven code automation works well in conjunction with Continuous Integration/Continuous Deployment, improving efficiency in the workflow.
+                </p>
+              </div>
+
+              <div className="bg-primary/40 rounded-lg p-4 border border-secondary/20">
+                <h3 className="text-lg font-semibold text-secondary mb-2">Scalability and Customization</h3>
+                <p className="text-white/80 leading-relaxed">
+                  AI can adapt to a wide variety of project needs and offers solutions for most complex software applications.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          {/* SECTION: Future of Generative AI */}
+          <section id="future" className="scroll-mt-24 mb-10">
+            <h2 className="text-2xl font-bold text-white mb-4">Future of Generative AI in Software Engineering</h2>
+            <p className="text-white/80 leading-relaxed mb-4">
+              The pace at which generative AI improves keeps pushing out the limits of what is possible with smart coding automation. Generative AI continues to extend the scope of intelligent code automation as it proceeds to evolve and change. Advancement of generative AI empowers innovation and challenges conventional limits in the automation of coding.
+            </p>
+            <p className="text-white/80 leading-relaxed mb-4">
+              Growth in generative AI is unlocking new frontiers in software development automation. Quick Evolution of Generative AI Speeds Up Breakthroughs in Intelligent Coding.
             </p>
           </section>
 
-          {/* SECTION: AI in Code Generation */}
-          <section id="ai-code-generation" className="scroll-mt-24">
-            <h2 className="text-2xl font-bold text-white mb-4">AI and Code Generation</h2>
-            <p className="text-white/80 leading-relaxed mb-6">
-              AI has a major impact on code generation. Technologies powered by <Link href="/machine-learning" className="text-secondary hover:text-secondary/80 underline font-medium">machine learning</Link> use natural language processing to understand written descriptions and provide code suggestions or even generate complete code. This speeds up development, reduces human error, and frees developers to focus on creative problem-solving.
-            </p>
-            <p className="text-white/80 leading-relaxed mb-10">
-              AI-powered autocompletion and code synthesis tools predict code lines or create full functions. As they learn from vast datasets, these tools become more efficient over time, contributing to faster and more effective development cycles.
-            </p>
+          {/* SECTION: Benefits */}
+          <section id="benefits" className="scroll-mt-24 mb-10">
+            <h2 className="text-2xl font-bold text-white mb-4">Benefits of Generative AI</h2>
+            
+            <div className="space-y-3 mb-6">
+              <div className="bg-primary/40 rounded-lg p-4 border border-secondary/20">
+                <p className="text-white/80 leading-relaxed">
+                  <strong className="text-secondary">Faster Time to Market:</strong> With the automation of software creation, more innovation due to AI-driven creativity.
+                </p>
+              </div>
+
+              <div className="bg-primary/40 rounded-lg p-4 border border-secondary/20">
+                <p className="text-white/80 leading-relaxed">
+                  <strong className="text-secondary">Enhanced Innovation:</strong> AI-driven creativity enables developers to explore new solutions and approaches.
+                </p>
+              </div>
+
+              <div className="bg-primary/40 rounded-lg p-4 border border-secondary/20">
+                <p className="text-white/80 leading-relaxed">
+                  <strong className="text-secondary">Better Security:</strong> Proactive detection of vulnerabilities through intelligent analysis.
+                </p>
+              </div>
+            </div>
           </section>
 
-          {/* SECTION: AI in Testing and Debugging */}
-          <section id="debugging-testing" className="scroll-mt-24">
-            <h2 className="text-2xl font-bold text-white mb-4">Smarter Debugging and Testing</h2>
-            <p className="text-white/80 leading-relaxed mb-6">
-              Beyond coding, AI technologies improve debugging and testing. Advanced AI tools can detect bugs, uncover inefficiencies, and suggest improvements. AI-driven testing systems create adaptive test cases and prioritize critical tests—resulting in stronger software quality and enhanced security.
-            </p>
-            <p className="text-white/80 leading-relaxed mb-10">
-              AI can forecast errors based on historical data, helping engineers avoid future problems. These systems use machine learning algorithms to improve test processes by analyzing data from past incidents.
-            </p>
-          </section>
-
-          {/* SECTION: AI in DevOps and Management */}
-          <section id="devops-management" className="scroll-mt-24">
-            <h2 className="text-2xl font-bold text-white mb-4">Enhancing DevOps and Project Management</h2>
-            <p className="text-white/80 leading-relaxed mb-10">
-              AI supports project management and DevOps by automating repetitive tasks, improving time estimation, and streamlining CI/CD pipelines. AI-powered tools enhance resource allocation, task scheduling, and real-time performance monitoring to prevent deployment issues.
-            </p>
-          </section>
-
-          {/* SECTION: Specialized AI Development Tools */}
-          <section id="emerging-frameworks" className="scroll-mt-24">
-            <h2 className="text-2xl font-bold text-white mb-4">Emerging AI Development Frameworks</h2>
-            <p className="text-white/80 leading-relaxed mb-10">
-              AI development has introduced specialized frameworks that help programmers build more reliable and efficient AI applications using various programming languages. These tools allow developers to integrate advanced AI capabilities seamlessly into their projects.
-            </p>
-          </section>
-
-          {/* FINAL THOUGHTS */}
-          <section id="final-thoughts" className="scroll-mt-24">
-            <h2 className="text-2xl font-bold text-white mb-4">Final Thoughts</h2>
-            <p className="text-white/80 leading-relaxed mb-6">
-              All things considered, AI is improving development speed and accuracy while creating a more dependable and secure software environment. As AI continues to evolve, it may completely redefine software development processes and potentially make traditional agile methods obsolete.
+          {/* CONCLUSION */}
+          <section id="conclusion" className="scroll-mt-24 mb-10">
+            <h2 className="text-2xl font-bold text-white mb-4">Conclusion</h2>
+            <p className="text-white/80 leading-relaxed mb-4">
+              Generative AI is now driving a complete transformation of software development automation in terms of great gains in efficiency, accuracy, and innovation. As AI technology continues to evolve, generative AI solutions will be included more into the core fabric of development workflows.
             </p>
           </section>
         </div>

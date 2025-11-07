@@ -12,15 +12,13 @@ const Blog31 = () => {
   // Table of contents data
   const tocItems = [
     { id: "tldr", title: "TL;DR" },
-    { id: "intro", title: "Introduction" },
     { id: "what-is", title: "What Is Underground Mapping?" },
-    { id: "why-important", title: "Why Is Underground Mapping Important?" },
-    { id: "technologies", title: "Technologies Used in Underground Mapping" },
-    { id: "challenges", title: "Challenges and Limitations" },
-    { id: "applications", title: "Applications of Underground Mapping" },
-    { id: "future-trends", title: "Future Trends in Underground Mapping" },
+    { id: "gpr", title: "Ground Penetrating Radar" },
+    { id: "em-locator", title: "EM Locator and Potholing" },
+    { id: "surveying", title: "Surveying Infrastructure" },
+    { id: "seismic", title: "Seismic Imaging" },
+    { id: "bathymetric", title: "Bathymetric Mapping" },
     { id: "conclusion", title: "Conclusion" },
-    { id: "faqs", title: "FAQs" },
   ];
 
   // Smooth scroll to section
@@ -151,168 +149,124 @@ const Blog31 = () => {
           </div>
 
           {/* SECTION: TL;DR */}
-          <section id="tldr" className="scroll-mt-24">
+          <section id="tldr" className="scroll-mt-24 mb-10">
             <h2 className="text-2xl font-bold text-white mb-4">TL;DR</h2>
-            <p className="text-white/80 leading-relaxed mb-10">
-              Underground mapping helps uncover what's hidden beneath the surface—like pipes, cables, and tunnels—so construction and planning can be done safely and efficiently. It uses tools such as ground-penetrating radar and GIS systems to reduce risks, avoid accidents, and save costs. While challenges like soil conditions or old records exist, it's a valuable step for engineers, contractors, and planners. Newer advances like 3D modeling and AI are making the process even more reliable.
-            </p>
-          </section>
-
-          {/* SECTION: Introduction */}
-          <section id="intro" className="scroll-mt-24">
-            <h2 className="text-2xl font-bold text-white mb-4">Introduction</h2>
             <p className="text-white/80 leading-relaxed mb-4">
-              Before any construction project begins, one question matters most: what lies beneath the ground? Underground networks of pipes, cables, and conduits are everywhere, and damaging them can cause serious accidents, costly delays, and service disruptions.
+              Underground mapping uses specialized technology to map subterranean structures for resource extraction, infrastructure planning, and safety improvement. Technologies like Ground Penetrating Radar (GPR), EM locators, seismic imaging, and bathymetric mapping provide accurate subsurface data.
             </p>
-            <p className="text-white/80 leading-relaxed mb-10">
-              Underground mapping provides the solution. It involves detecting, locating, and recording subsurface utilities to create accurate maps for engineers, contractors, and planners. With better knowledge of what's below the surface, projects can move forward more safely and efficiently.
+            <p className="text-white/80 leading-relaxed mb-4">
+              These tools help avoid excavation delays, improve safety by locating utilities, and enhance collaboration between stakeholders. From detecting buried pipes to mapping the ocean floor, underground mapping enables efficient resource extraction and smarter urban development.
             </p>
           </section>
 
           {/* SECTION: What Is Underground Mapping? */}
-          <section id="what-is" className="scroll-mt-24">
-            <h2 className="text-2xl font-bold text-white mb-4">What Is Underground Mapping?</h2>
+          <section id="what-is" className="scroll-mt-24 mb-10">
+            <h2 className="text-2xl font-bold text-white mb-4">1. What Is Underground Mapping?</h2>
             <p className="text-white/80 leading-relaxed mb-4">
-              Underground mapping is the practice of surveying below the ground to identify and document hidden infrastructure. These maps include details about the type of utility, its depth, and precise location. Modern underground mapping integrates this data into Geographic Information Systems (GIS), allowing professionals to visualize underground networks in 2D or 3D.
+              Underground Mapping is the use of specialized technology to map subterranean structures. Resource extraction is the primary goal of underground mapping. This includes oil and natural gas exploration and identifying the location of underground infrastructures.
             </p>
-            <p className="text-white/80 leading-relaxed mb-10">
-              Unlike traditional records that may be outdated or incomplete, underground mapping uses real-time detection to improve accuracy. This process is essential not just for large construction projects but also for smaller-scale works like road maintenance, landscaping, and utility repairs.
+            <p className="text-white/80 leading-relaxed mb-4">Underground mapping also helps:</p>
+            
+            <div className="space-y-3 mb-6">
+              <div className="bg-primary/40 rounded-lg p-4 border border-secondary/20">
+                <p className="text-white/80 leading-relaxed">
+                  • Avoid time wasted on excavation and construction, due to encountering unplanned subsurface infrastructures.
+                </p>
+              </div>
+              <div className="bg-primary/40 rounded-lg p-4 border border-secondary/20">
+                <p className="text-white/80 leading-relaxed">
+                  • Improve safety by accurately locating utilities, allowing contractors to implement safety measures, like safe digging and the use of appropriate machines.
+                </p>
+              </div>
+              <div className="bg-primary/40 rounded-lg p-4 border border-secondary/20">
+                <p className="text-white/80 leading-relaxed">
+                  • Improve collaboration by having clear data on utilities. Project stakeholders and utility companies can reduce miscommunication and improve project execution. For example, urban planners can map utilities and identify dangerous areas.
+                </p>
+              </div>
+            </div>
+
+            <p className="text-white/80 leading-relaxed mb-4">
+              This article describes the kinds of underground mapping technologies available today.
             </p>
           </section>
 
-          {/* SECTION: Why Is Underground Mapping Important? */}
-          <section id="why-important" className="scroll-mt-24">
-            <h2 className="text-2xl font-bold text-white mb-4">Why Is Underground Mapping Important?</h2>
+          {/* SECTION: Ground Penetrating Radar */}
+          <section id="gpr" className="scroll-mt-24 mb-10">
+            <h2 className="text-2xl font-bold text-white mb-4">2. Ground Penetrating Radar</h2>
             <p className="text-white/80 leading-relaxed mb-4">
-              Construction and excavation activities often take place in urban areas filled with buried utilities. Striking a gas line, water pipe, or electrical cable can have serious consequences. The benefits of underground mapping include:
+              Ground penetrating radar (GPR) is one of the radar technologies designed to scan the subsurface of the Earth. To perform this function, the technology transmits a high frequency electromagnetic wave and measures the reflection time and the return waves. The depth of the reflections gives a good estimate of the structure and content of the subsurface. This technology is also used in LiDAR.
             </p>
-            <ul className="list-disc ml-6 text-white/80 mb-6 space-y-2">
-              <li><strong>Preventing accidents and utility strikes:</strong> Protects workers and the public from harm.</li>
-              <li><strong>Reducing costs and delays:</strong> Avoids expensive repairs and project interruptions.</li>
-              <li><strong>Supporting smart planning:</strong> Provides reliable data for infrastructure development.</li>
-              <li><strong>Improving compliance:</strong> Meets regulatory requirements and industry standards.</li>
-            </ul>
-            <p className="text-white/80 leading-relaxed mb-10">
-              For example, in many countries, regulations require contractors to identify underground utilities before digging. Without mapping, the risks are too high.
+            <p className="text-white/80 leading-relaxed mb-4">
+              Ground Penetrating Radar (GPR) combines both geophysical and surveying techniques to collect information about the subsurface of the Earth. It is mainly used for detecting and locating subsurface structures and for non-destructive subsurface surveying. Data is gathered for a 2-dimensional map of a given area to visualize the layering of the subsurface materials and structures. This information can then be used in analysis to aid in decision making for the area being studied.
+            </p>
+
+            <div className="bg-primary/40 rounded-lg p-6 border border-secondary/20 mb-4">
+              <h3 className="text-lg font-semibold text-secondary mb-3">Uses of Ground Penetrating Radar</h3>
+              <p className="text-white/80 leading-relaxed mb-2">The uses of GPR encompass:</p>
+              <ul className="space-y-2 text-white/80">
+                <li>• Detecting buried objects</li>
+                <li>• Mapping subsurface infrastructure</li>
+                <li>• Measuring peat thickness</li>
+                <li>• Determining depth to the water table</li>
+                <li>• Scanning the depth of water for mineral exploration</li>
+                <li>• More readily mapping subsurface mineral bodies</li>
+              </ul>
+            </div>
+          </section>
+
+          {/* SECTION: EM Locator and Potholing */}
+          <section id="em-locator" className="scroll-mt-24 mb-10">
+            <h2 className="text-2xl font-bold text-white mb-4">3. EM Locator and Potholing</h2>
+            <p className="text-white/80 leading-relaxed mb-4">
+              An EM Locator would be akin to a metal detector but for buried pipes. Rather than magnets, radio waves are used. They can pass a signal and create a loop with a metallic conductor (like pipes) and are able to trace the conductor and the signal is returned to the locator.
+            </p>
+            <p className="text-white/80 leading-relaxed mb-4">
+              This works well if the pipes are connected to a fixture on the surface, but accuracy drops when attempting to trace the pipes in the ground. Potholing is the most accurate and direct method of utility location. It is a time consuming and labour-intensive method, it does save time and money in the long run.
             </p>
           </section>
 
-          {/* SECTION: Technologies Used */}
-          <section id="technologies" className="scroll-mt-24">
-            <h2 className="text-2xl font-bold text-white mb-4">Technologies Used in Underground Mapping</h2>
+          {/* SECTION: Surveying Infrastructure */}
+          <section id="surveying" className="scroll-mt-24 mb-10">
+            <h2 className="text-2xl font-bold text-white mb-4">4. Surveying Infrastructure</h2>
             <p className="text-white/80 leading-relaxed mb-4">
-              Underground mapping relies on a combination of advanced tools. Each has its strengths and limitations, which is why they are often used together:
+              Infrastructure surveying from above can also give planners information relevant to large projects about utilities that are below ground. Though traditionally expensive, helicopter aerial inspection offers results that can take considerable time.
             </p>
-            <ul className="list-disc ml-6 text-white/80 mb-6 space-y-2">
-              <li><strong>Ground Penetrating Radar (GPR):</strong> Sends radio waves into the ground and detects reflections to reveal buried objects. Works well in dry sandy soils but less effectively in clay or wet conditions.</li>
-              <li><strong>Electromagnetic (EM) Locators:</strong> Best for finding metallic pipes and cables by detecting their electromagnetic fields.</li>
-              <li><strong>LiDAR and GPS/GNSS:</strong> Provide surface data and precise positioning to align underground features with surface maps.</li>
-              <li><strong>GIS Integration:</strong> Stores and visualizes data in layered maps that can be shared across teams.</li>
-              <li><strong>3D Subsurface Modeling:</strong> Creates detailed visualizations of complex underground networks.</li>
-            </ul>
-            <p className="text-white/80 leading-relaxed mb-10">
-              By combining these technologies, surveyors can deliver maps with much higher confidence than relying on one method alone.
+            <p className="text-white/80 leading-relaxed mb-4">
+              Over the past ten years, co-founders of ARGO Labs have pointed out that satellite imagery reduces the time to complete a locate from 72 hours to almost real time.
             </p>
           </section>
 
-          {/* SECTION: Challenges and Limitations */}
-          <section id="challenges" className="scroll-mt-24">
-            <h2 className="text-2xl font-bold text-white mb-4">Challenges and Limitations</h2>
+          {/* SECTION: Seismic Imaging */}
+          <section id="seismic" className="scroll-mt-24 mb-10">
+            <h2 className="text-2xl font-bold text-white mb-4">5. Seismic Imaging</h2>
             <p className="text-white/80 leading-relaxed mb-4">
-              Despite technological progress, underground mapping is not perfect. Several challenges remain:
+              Seismic imaging involves mapping the subsurface using sound waves and is also a means of subsurface surveying. This technique sends acoustic waves through the ground using a vibriosis or explosive detonation. As sound waves reflect off of ground objects, a computation of the time it takes for the wave to reflect is achieved.
             </p>
-            <ul className="list-disc ml-6 text-white/80 mb-6 space-y-2">
-              <li><strong>Soil conditions:</strong> Clay-rich or water-logged soils reduce the effectiveness of GPR.</li>
-              <li><strong>Non-metallic utilities:</strong> Plastic pipes are harder to detect with electromagnetic methods.</li>
-              <li><strong>Overlapping infrastructure:</strong> Dense urban environments often have multiple utilities stacked together, making interpretation complex.</li>
-              <li><strong>Outdated records:</strong> Many existing maps are incomplete or inaccurate.</li>
-              <li><strong>Skill requirements:</strong> High-quality results depend on trained operators and proper equipment.</li>
-            </ul>
-            <p className="text-white/80 leading-relaxed mb-10">
-              Because of these challenges, verification through physical methods, like potholing (careful digging), is often used to confirm map results before construction begins.
+            <p className="text-white/80 leading-relaxed mb-4">
+              The geophones at the survey site captures the resultant waves, and the exit waves are documented. Geophysicists can use the data to analyse the surface and rock layers for determining the geo resources.
+            </p>
+            <p className="text-white/80 leading-relaxed mb-4">
+              Seismic imaging initially was designed for detecting the deposits of coal, gas, and oil, which is also used for water geo resources and geothermal resources and for geothermal exploration. It is beneficial for geothermal resource potential and geothermal energy resource surveying.
             </p>
           </section>
 
-          {/* SECTION: Applications */}
-          <section id="applications" className="scroll-mt-24">
-            <h2 className="text-2xl font-bold text-white mb-4">Applications of Underground Mapping</h2>
-            <p className="text-white/80 leading-relaxed mb-4">Underground mapping is valuable in many fields:</p>
-            <ul className="list-disc ml-6 text-white/80 mb-6 space-y-2">
-              <li><strong>Construction and Excavation:</strong> Reduces the risk of hitting utilities during roadworks, tunneling, or building foundations.</li>
-              <li><strong>Urban Planning:</strong> Helps planners design new infrastructure without disrupting existing networks.</li>
-              <li><strong>Utility Maintenance:</strong> Supports upgrades and repairs by providing accurate location data.</li>
-              <li><strong>Environmental and Archaeological Studies:</strong> Identifies buried objects or features without disturbing the ground.</li>
-            </ul>
-            <p className="text-white/80 leading-relaxed mb-10">
-              For example, city planners can use underground mapping data to design new metro systems or smart city networks, ensuring they avoid existing pipelines and reduce service disruptions.
-            </p>
-          </section>
-
-          {/* SECTION: Future Trends */}
-          <section id="future-trends" className="scroll-mt-24">
-            <h2 className="text-2xl font-bold text-white mb-4">Future Trends in Underground Mapping</h2>
+          {/* SECTION: Bathymetric Mapping */}
+          <section id="bathymetric" className="scroll-mt-24 mb-10">
+            <h2 className="text-2xl font-bold text-white mb-4">6. Bathymetric Mapping</h2>
             <p className="text-white/80 leading-relaxed mb-4">
-              The field of underground mapping is evolving quickly with digital innovations:
+              Bathymetric mapping is a method of looking underneath the ocean surface. It is possible to create a map of the ocean floor by taking measurements from a ship that is equipped with Sonar technology. This method involves echo sounding and other map creation techniques for underwater mapping.
             </p>
-            <ul className="list-disc ml-6 text-white/80 mb-6 space-y-2">
-              <li><strong>3D and 4D Subsurface Models:</strong> Allow better visualization of complex networks.</li>
-              <li><strong>Artificial Intelligence:</strong> Assists in interpreting GPR and EM data with higher accuracy.</li>
-              <li><strong>Cloud-Based GIS Platforms:</strong> Enable real-time sharing of underground maps among project teams.</li>
-              <li><strong>Integration with Digital Twins:</strong> Feeding underground data into digital replicas of cities for smarter management.</li>
-            </ul>
-            <p className="text-white/80 leading-relaxed mb-10">
-              These advances will make underground mapping more precise, accessible, and valuable across industries.
+            <p className="text-white/80 leading-relaxed mb-4">
+              Bathymetric maps are useful for navigation, coastal zone planning, and for the environmental marine maps. Mapping the ocean floor opens a new way of understanding the ocean and its features. It provides information about the ocean floor and how it changes over time, its physical features, and the movement of the tectonic plates.
             </p>
           </section>
 
           {/* SECTION: Conclusion */}
-          <section id="conclusion" className="scroll-mt-24">
+          <section id="conclusion" className="scroll-mt-24 mb-10">
             <h2 className="text-2xl font-bold text-white mb-4">Conclusion</h2>
-            <p className="text-white/80 leading-relaxed mb-10">
-              Underground mapping is an essential part of modern construction and infrastructure projects. By combining tools such as GPR, EM locators, and GIS, professionals can reduce risks, save costs, and protect lives. Although challenges like soil conditions and outdated records remain, new technologies—especially AI and 3D modeling—are improving accuracy and usability. As cities grow and underground networks become denser, underground mapping will only increase in importance for building a safer and smarter future.
+            <p className="text-white/80 leading-relaxed mb-4">
+              Underground mapping technologies enable efficient resource extraction and infrastructure planning by providing accurate, real-time data on subsurface structures and utilities. These innovations enhance safety, reduce project costs, and support smarter collaboration for urban development and mining operations.
             </p>
-          </section>
-
-          {/* SECTION: FAQs */}
-          <section id="faqs" className="scroll-mt-24">
-            <h2 className="text-2xl font-bold text-white mb-4">FAQs</h2>
-            
-            <div className="space-y-6 mb-10">
-              <div className="bg-primary/40 rounded-lg p-6 border border-secondary/20">
-                <h3 className="text-lg font-semibold text-secondary mb-2">How accurate is underground mapping?</h3>
-                <p className="text-white/80 leading-relaxed">
-                  Accuracy depends on the method and conditions. In favorable environments, errors can be as small as a few centimeters. In difficult soils, accuracy may be reduced.
-                </p>
-              </div>
-
-              <div className="bg-primary/40 rounded-lg p-6 border border-secondary/20">
-                <h3 className="text-lg font-semibold text-secondary mb-2">Can the public access underground maps?</h3>
-                <p className="text-white/80 leading-relaxed">
-                  Access is limited. Some municipalities allow homeowners or contractors to request utility maps, but full records are often restricted for safety and security reasons.
-                </p>
-              </div>
-
-              <div className="bg-primary/40 rounded-lg p-6 border border-secondary/20">
-                <h3 className="text-lg font-semibold text-secondary mb-2">What standards are followed?</h3>
-                <p className="text-white/80 leading-relaxed">
-                  In some regions, standards such as PAS 128 (UK) define survey accuracy levels. Following standards ensures consistency and reliability in mapping results.
-                </p>
-              </div>
-
-              <div className="bg-primary/40 rounded-lg p-6 border border-secondary/20">
-                <h3 className="text-lg font-semibold text-secondary mb-2">How much does underground mapping cost?</h3>
-                <p className="text-white/80 leading-relaxed">
-                  Costs vary depending on site size, complexity, and required technologies. While initial surveys may add expense, they often save money by preventing costly utility damage.
-                </p>
-              </div>
-
-              <div className="bg-primary/40 rounded-lg p-6 border border-secondary/20">
-                <h3 className="text-lg font-semibold text-secondary mb-2">Who uses underground mapping?</h3>
-                <p className="text-white/80 leading-relaxed">
-                  Engineers, contractors, utility companies, and city planners are the main users. Increasingly, environmental and archaeological teams also rely on these methods.
-                </p>
-              </div>
-            </div>
           </section>
         </div>
       </div>
