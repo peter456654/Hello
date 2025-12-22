@@ -24,7 +24,7 @@ import {
 
 function Hyperflexai() {
   return (
-    <div className="relative bg-primary min-h-screen overflow-hidden">
+    <div className="relative bg-secondary text-primary min-h-screen overflow-hidden">
       {/* Background Decorative Elements */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 left-20 w-32 h-32 md:w-40 md:h-40 bg-secondary/20 rounded-full"></div>
@@ -46,23 +46,23 @@ function Hyperflexai() {
       <div className="container mx-auto px-8 lg:px-16 relative z-10">
         {/* Enhanced Hero Section */}
         <div className="text-center mb-16 py-12">
-          <div className="inline-flex items-center border border-secondary/30 bg-white/5 backdrop-blur-sm text-secondary px-6 py-3 rounded-full text-sm font-medium mb-8">
+          <div className="inline-flex items-center border border-secondary/30 bg-secondary/10 backdrop-blur-sm text-primary px-6 py-3 rounded-full text-sm font-medium mb-8">
             <span className="w-2 h-2 bg-secondary rounded-full mr-2 animate-pulse"></span>
             Academic Search Engine
           </div>
-          <h1 className="text-5xl lg:text-6xl font-bold text-white mb-8 leading-tight">
+          <h1 className="text-5xl lg:text-6xl font-bold text-primary mb-8 leading-tight">
             Hyperflx: The <span className="bg-gradient-to-r from-secondary via-cyan-400 to-secondary bg-clip-text text-transparent">Smarter Way</span> to Search for Academic Knowledge
           </h1>
           <div className="max-w-4xl mx-auto">
-            <div className="bg-primary/40 backdrop-blur-xl rounded-3xl p-8 shadow-2xl border border-white/20 hover:bg-primary/50 transition-all duration-500 relative overflow-hidden">
+            <div className="bg-secondary/30 backdrop-blur-xl rounded-3xl p-8 shadow-2xl border border-primary/20 hover:bg-secondary/40 transition-all duration-500 relative overflow-hidden">
               <div className="absolute -top-2 -left-2 w-8 h-8 border-l-4 border-t-4 border-secondary rounded-tl-2xl opacity-60"></div>
               <div className="absolute -bottom-2 -right-2 w-8 h-8 border-r-4 border-b-4 border-secondary rounded-br-2xl opacity-60"></div>
               
-              <h2 className="text-2xl font-bold text-white mb-6 flex items-center">
+              <h2 className="text-2xl font-bold mb-6 flex items-center">
                 <span className="w-3 h-3 bg-secondary rounded-full mr-3 animate-pulse"></span>
                 Why We Built Hyperflx
               </h2>
-              <p className="text-lg text-white/90 leading-relaxed text-justify">
+              <p className="text-lg leading-relaxed text-justify">
                 At <span className="text-secondary font-medium">Codework</span>, we saw a gap in how students and researchers access reliable academic content. We built <span className="text-secondary font-medium">Hyperflx</span>, an AI-powered search engine made specifically for education and research. It delivers trusted, easy-to-understand, and well-organized results to make learning smoother and faster.
               </p>
               
@@ -74,7 +74,7 @@ function Hyperflexai() {
         {/* Enhanced Problems Section */}
         <div className="mb-20">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-white mb-6">
+            <h2 className="text-4xl font-bold mb-6">
               Common Struggles in Academic Search
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-secondary to-transparent mx-auto rounded-full"></div>
@@ -88,10 +88,10 @@ function Hyperflexai() {
               { title: "Lack of Visuals", desc: "Few images or videos to simplify learning", icon: <FaMobileAlt className="text-secondary" /> },
               { title: "Unstructured Layouts", desc: "Cluttered content makes research harder", icon: <FaFolder className="text-secondary" /> }
             ].map((problem, index) => (
-              <div key={index} className="bg-primary/30 backdrop-blur-xl rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 border border-white/10 hover:border-secondary/30 hover:bg-primary/40 group">
+              <div key={index} className="bg-secondary/30 backdrop-blur-xl rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 border border-primary/10 hover:border-secondary/30 hover:bg-secondary/40 group">
                 <div className="text-3xl mb-4 group-hover:scale-110 transition-transform duration-300">{problem.icon}</div>
-                <h3 className="font-bold text-white mb-2">{problem.title}</h3>
-                <p className="text-white/80">{problem.desc}</p>
+                <h3 className="font-bold mb-2">{problem.title}</h3>
+                <p className="text-primary/80">{problem.desc}</p>
               </div>
             ))}
           </div>
@@ -106,11 +106,11 @@ function Hyperflexai() {
                 alt="Person using Hyperflx for academic search"
                 className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-700"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-primary/20 to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-secondary/60 via-secondary/20 to-transparent"></div>
               <div className="absolute inset-0 rounded-3xl border-2 border-secondary/30 group-hover:border-secondary/50 transition-all duration-500"></div>
-              <div className="absolute bottom-6 left-6 text-white">
+              <div className="absolute bottom-6 left-6">
                 <h3 className="text-xl font-bold mb-2">Smart Academic Search</h3>
-                <p className="text-sm opacity-90 text-secondary">AI-powered research made simple</p>
+                <p className="text-sm opacity-90 text-primary">AI-powered research made simple</p>
               </div>
             </div>
             
@@ -120,11 +120,11 @@ function Hyperflexai() {
                 alt="Hyperflx displaying academic media results"
                 className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-700"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-primary/20 to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-secondary/60 via-secondary/20 to-transparent"></div>
               <div className="absolute inset-0 rounded-3xl border-2 border-secondary/30 group-hover:border-secondary/50 transition-all duration-500"></div>
-              <div className="absolute bottom-6 left-6 text-white">
+              <div className="absolute bottom-6 left-6">
                 <h3 className="text-xl font-bold mb-2">Visual Learning</h3>
-                <p className="text-sm opacity-90 text-secondary">Rich media for better understanding</p>
+                <p className="text-sm opacity-90 text-primary">Rich media for better understanding</p>
               </div>
             </div>
           </div>
@@ -134,7 +134,7 @@ function Hyperflexai() {
         <div className="mb-20">
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Our Strategy */}
-            <div className="bg-primary/40 backdrop-blur-xl rounded-3xl p-8 shadow-2xl border border-white/20 hover:bg-primary/50 transition-all duration-500 relative overflow-hidden">
+            <div className="bg-secondary/30 backdrop-blur-xl rounded-3xl p-8 shadow-2xl border border-primary/20 hover:bg-secondary/40 transition-all duration-500 relative overflow-hidden">
               <div className="absolute -top-2 -left-2 w-8 h-8 border-l-4 border-t-4 border-secondary rounded-tl-2xl opacity-60"></div>
               <div className="absolute -bottom-2 -right-2 w-8 h-8 border-r-4 border-b-4 border-secondary rounded-br-2xl opacity-60"></div>
               
@@ -142,16 +142,16 @@ function Hyperflexai() {
                 <div className="w-12 h-12 bg-secondary rounded-xl flex items-center justify-center mr-4">
                   <FaBullseye className="text-primary text-xl" />
                 </div>
-                <h3 className="text-3xl font-bold text-white">Our Smarter Search Strategy</h3>
+                <h3 className="text-3xl font-bold">Our Smarter Search Strategy</h3>
               </div>
               
-              <p className="text-white/90 mb-6 text-lg">
+              <p className="text-primary/90 mb-6 text-lg">
                 <span className="text-secondary font-medium">Hyperflx</span> is built to solve those problems using a focused, AI-driven approach:
               </p>
               
               <div className="space-y-4">
                 <div className="bg-secondary/10 backdrop-blur-sm rounded-xl p-4 border-l-4 border-secondary">
-                  <p className="text-white/90">
+                  <p className="text-primary/90">
                     <span className="font-semibold text-secondary">AI-Powered Responses:</span> Hyperflx utilizes LLMs to generate answers and responses based on training data. Unlike platforms such as PerplexCity, it does not source its information from the web in real-time. However, it does gather images and videos from online sources for visual content generation.
                   </p>
                 </div>
@@ -164,8 +164,8 @@ function Hyperflexai() {
                   <div key={index} className="flex items-start space-x-3 p-3 rounded-xl hover:bg-white/5 transition-colors group">
                     <span className="text-2xl group-hover:scale-110 transition-transform duration-300">{feature.icon}</span>
                     <div>
-                      <h4 className="font-semibold text-white">{feature.title}</h4>
-                      <p className="text-white/80">{feature.desc}</p>
+                      <h4 className="font-semibold">{feature.title}</h4>
+                      <p className="text-primary/80">{feature.desc}</p>
                     </div>
                   </div>
                 ))}
@@ -208,16 +208,16 @@ function Hyperflexai() {
 
         {/* Enhanced Development Process */}
         <div className="mb-20">
-          <div className="bg-primary/40 backdrop-blur-xl rounded-3xl p-8 shadow-2xl border border-white/20 relative overflow-hidden">
+          <div className="bg-secondary/30 backdrop-blur-xl rounded-3xl p-8 shadow-2xl border border-primary/20 relative overflow-hidden">
             <div className="absolute -top-2 -left-2 w-8 h-8 border-l-4 border-t-4 border-secondary rounded-tl-2xl opacity-60"></div>
             <div className="absolute -bottom-2 -right-2 w-8 h-8 border-r-4 border-b-4 border-secondary rounded-br-2xl opacity-60"></div>
             
             <div className="text-center mb-8">
-              <div className="inline-flex items-center border border-secondary/30 bg-white/5 backdrop-blur-sm text-secondary px-6 py-3 rounded-full text-sm font-medium mb-6">
+              <div className="inline-flex items-center border border-secondary/30 bg-secondary/10 backdrop-blur-sm text-primary px-6 py-3 rounded-full text-sm font-medium mb-6">
                 <span className="w-2 h-2 bg-secondary rounded-full mr-2 animate-pulse"></span>
                 Development Process
               </div>
-              <h3 className="text-3xl font-bold text-white mb-4">
+              <h3 className="text-3xl font-bold mb-4">
                 From Idea to Launch: How We Did It Fast
               </h3>
             </div>
@@ -229,16 +229,16 @@ function Hyperflexai() {
                 { title: "User Feedback Testing", desc: "Refined through real student/teacher input", icon: <FaUsers className="text-secondary" /> },
                 { title: "CI/CD Automation", desc: "Enabled fast updates and scalable improvements", icon: <FaCogs className="text-secondary" /> }
               ].map((item, index) => (
-                <div key={index} className="text-center p-6 rounded-2xl bg-white/5 backdrop-blur-sm hover:bg-white/10 transition-all duration-300 border border-white/10 hover:border-secondary/30 group">
+                <div key={index} className="text-center p-6 rounded-2xl bg-secondary/10 backdrop-blur-sm hover:bg-secondary/20 transition-all duration-300 border border-primary/10 hover:border-secondary/30 group">
                   <div className="text-4xl mb-4 flex justify-center group-hover:scale-110 transition-transform duration-300">{item.icon}</div>
-                  <h4 className="font-bold text-white mb-2">{item.title}</h4>
-                  <p className="text-white/80 text-sm">{item.desc}</p>
+                  <h4 className="font-bold mb-2">{item.title}</h4>
+                  <p className="text-primary/80 text-sm">{item.desc}</p>
                 </div>
               ))}
             </div>
             
             <div className="bg-secondary/10 backdrop-blur-sm rounded-xl p-6 border-l-4 border-secondary">
-              <p className="text-white/90 text-lg">
+              <p className="text-primary/90 text-lg">
                 <span className="font-semibold text-secondary">Result:</span> It helped us launch ahead of schedule, without compromising quality.
               </p>
             </div>

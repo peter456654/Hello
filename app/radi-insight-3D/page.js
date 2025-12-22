@@ -4,7 +4,7 @@ import ColowatchStudies from '../components/colowatch/colowatchStudies'
 
 const page = () => {
   return (
-    <div>
+    <div className="bg-secondary text-primary min-h-screen">
         <ColowatchLanding/>
         <ColowatchStudies/>
     </div>

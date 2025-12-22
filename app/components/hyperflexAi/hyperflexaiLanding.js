@@ -4,7 +4,7 @@ import React from 'react';
 const HyperflexaiLanding = () => {
   return (
     <>
-      <section className="relative bg-primary w-full py-12 sm:py-16 md:py-24 lg:py-36 pt-20 sm:pt-16 md:pt-24 lg:pt-36 overflow-hidden">
+      <section className="relative bg-secondary w-full py-12 sm:py-16 md:py-24 lg:py-36 pt-20 sm:pt-16 md:pt-24 lg:pt-36 overflow-hidden">
         {/* Background Decorative Elements */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-20 left-20 w-32 h-32 md:w-40 md:h-40 bg-secondary/20 rounded-full"></div>
@@ -36,7 +36,7 @@ const HyperflexaiLanding = () => {
 
           <div className="flex flex-col lg:flex-row items-center justify-center gap-6 sm:gap-8 lg:gap-12 pt-16 lg:pr-8">
             {/* Enhanced Text Card with Brand Colors */}
-            <div className="w-full lg:w-4/12 xl:w-5/12 bg-gradient-to-br from-primary/40 via-primary/60 to-primary/80 backdrop-blur-xl border border-white/20 p-6 sm:p-8 lg:p-6 xl:p-8 rounded-xl sm:rounded-3xl text-white z-20 lg:-mr-20 xl:-mr-32 order-2 lg:order-1 lg:self-end shadow-2xl shadow-secondary/25 hover:scale-105 transition-all duration-500 relative overflow-hidden lg:ml-4">
+            <div className="w-full lg:w-4/12 xl:w-5/12 bg-gradient-to-br from-secondary/40 via-secondary/60 to-secondary/80 backdrop-blur-xl border border-primary/20 p-6 sm:p-8 lg:p-6 xl:p-8 rounded-xl sm:rounded-3xl text-primary z-20 lg:-mr-20 xl:-mr-32 order-2 lg:order-1 lg:self-end shadow-2xl shadow-secondary/25 hover:scale-105 transition-all duration-500 relative overflow-hidden lg:ml-4">
               
               {/* Corner Decorations */}
               <div className="absolute -top-2 -left-2 w-8 h-8 border-l-4 border-t-4 border-secondary rounded-tl-2xl opacity-60"></div>
@@ -53,7 +53,7 @@ const HyperflexaiLanding = () => {
                   AI-Powered
                 </span>{" "}
                 Search Engine for{" "}
-                <span className="text-white">Education</span>
+                <span className="text-primary">Education</span>
               </h1>
               
               {/* Decorative underline */}
@@ -62,7 +62,7 @@ const HyperflexaiLanding = () => {
               {/* Enhanced Paragraph */}
               <div className="relative">
                 <div className="absolute -left-4 top-0 w-1 h-full bg-gradient-to-b from-secondary to-transparent rounded-full hidden sm:block"></div>
-                <p className="text-sm sm:text-base md:text-lg lg:text-sm xl:text-lg w-full sm:w-[95%] lg:w-[95%] xl:w-[85%] leading-relaxed text-white/90 sm:pl-6 font-light">
+                <p className="text-sm sm:text-base md:text-lg lg:text-sm xl:text-lg w-full sm:w-[95%] lg:w-[95%] xl:w-[85%] leading-relaxed text-primary/90 sm:pl-6 font-light">
                   <span className="text-secondary font-medium">Hyperflx.AI</span> is a search engine focused on <span className="text-secondary font-medium">academic research</span>. It simplifies learning by delivering organized, accurate, and relevant <span className="text-secondary font-medium">educational information</span>.
                 </p>
               </div>
@@ -85,7 +85,7 @@ const HyperflexaiLanding = () => {
                 />
                 
                 {/* Gradient overlay */}
-                <div className="absolute inset-0 bg-gradient-to-tr from-primary/30 via-transparent to-secondary/20 group-hover:from-primary/20 group-hover:to-secondary/30 transition-all duration-500"></div>
+                <div className="absolute inset-0 bg-gradient-to-tr from-secondary/30 via-transparent to-secondary/20 group-hover:from-secondary/20 group-hover:to-secondary/30 transition-all duration-500"></div>
                 
                 {/* Floating tech elements */}
                 <div className="absolute top-4 right-4 w-8 h-8 bg-secondary/20 rounded-full flex items-center justify-center backdrop-blur-sm animate-float">

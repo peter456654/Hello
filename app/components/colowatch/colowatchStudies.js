@@ -28,7 +28,7 @@ import {
 
 function ColowatchStudies() {
   return (
-    <div className="relative bg-primary min-h-screen overflow-hidden">
+    <div className="relative bg-secondary min-h-screen overflow-hidden">
       {/* Background Decorative Elements */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 left-20 w-32 h-32 md:w-40 md:h-40 bg-secondary/20 rounded-full"></div>
@@ -53,19 +53,19 @@ function ColowatchStudies() {
             <span className="w-2 h-2 bg-secondary rounded-full mr-2 animate-pulse"></span>
             Healthcare Communication
           </div>
-          <h1 className="text-5xl lg:text-6xl font-bold text-white mb-8 leading-tight">
-            Making Medical Reports <span className="bg-gradient-to-r from-secondary via-cyan-400 to-secondary bg-clip-text text-transparent">More Accessible</span>
+          <h1 className="text-5xl lg:text-6xl font-bold text-primary mb-8 leading-tight">
+            Making Medical Reports <span className="bg-gradient-to-r from-primary via-primary-400 to-primary bg-clip-text text-transparent">More Accessible</span>
           </h1>
           <div className="max-w-4xl mx-auto">
-            <div className="bg-primary/40 backdrop-blur-xl rounded-3xl p-8 shadow-2xl border border-white/20 hover:bg-primary/50 transition-all duration-500 relative overflow-hidden">
+            <div className="bg-secondary/30 backdrop-blur-xl rounded-3xl p-8 shadow-2xl border border-primary/20 hover:bg-secondary/40 transition-all duration-500 relative overflow-hidden">
               <div className="absolute -top-2 -left-2 w-8 h-8 border-l-4 border-t-4 border-secondary rounded-tl-2xl opacity-60"></div>
               <div className="absolute -bottom-2 -right-2 w-8 h-8 border-r-4 border-b-4 border-secondary rounded-br-2xl opacity-60"></div>
               
-              <h2 className="text-2xl font-bold text-white mb-6 flex items-center justify-center">
+              <h2 className="text-2xl font-bold text-primary mb-6 flex items-center justify-center">
                 <span className="w-3 h-3 bg-secondary rounded-full mr-3 animate-pulse"></span>
                 Challenges Patients Face
               </h2>
-              <p className="text-lg text-white/90 leading-relaxed mb-6">
+              <p className="text-lg text-primary/90 leading-relaxed mb-6">
                 Deciphering <span className="text-secondary font-medium">medical reports</span> can often be an overwhelming experience for patients. The use of technical and intricate <span className="text-secondary font-medium">medical terms</span> can lead to:
               </p>
               <div className="grid md:grid-cols-3 gap-4">
@@ -77,7 +77,7 @@ function ColowatchStudies() {
                   <div key={index} className="bg-secondary/10 backdrop-blur-sm rounded-xl p-4 border-l-4 border-secondary hover:bg-secondary/15 transition-all duration-300">
                     <div className="flex items-center space-x-3">
                       <span className="text-2xl">{item.icon}</span>
-                      <span className="font-medium text-white">{item.text}</span>
+                      <span className="font-medium text-primary">{item.text}</span>
                     </div>
                   </div>
                 ))}
@@ -97,9 +97,9 @@ function ColowatchStudies() {
                 alt="Medical professional reviewing complex medical reports"
                 className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-700"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-primary/20 to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-secondary/60 via-secondary/20 to-transparent"></div>
               <div className="absolute inset-0 rounded-3xl border-2 border-secondary/30 group-hover:border-secondary/50 transition-all duration-500"></div>
-              <div className="absolute bottom-6 left-6 text-white">
+              <div className="absolute bottom-6 left-6 text-primary">
                 <h3 className="text-xl font-bold mb-2">Complex Medical Reports</h3>
                 <p className="text-sm opacity-90 text-secondary">Traditional reports with technical jargon</p>
               </div>
@@ -111,9 +111,9 @@ function ColowatchStudies() {
                 alt="Simplified medical report interface with visual aids"
                 className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-700"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-primary/20 to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-secondary/60 via-secondary/20 to-transparent"></div>
               <div className="absolute inset-0 rounded-3xl border-2 border-secondary/30 group-hover:border-secondary/50 transition-all duration-500"></div>
-              <div className="absolute bottom-6 left-6 text-white">
+              <div className="absolute bottom-6 left-6 text-primary">
                 <h3 className="text-xl font-bold mb-2">Simplified Communication</h3>
                 <p className="text-sm opacity-90 text-secondary">Clear, patient-friendly explanations</p>
               </div>
@@ -125,7 +125,7 @@ function ColowatchStudies() {
         <div className="mb-20">
           <div className="grid lg:grid-cols-2 gap-12">
             {/* How It Works */}
-            <div className="bg-primary/40 backdrop-blur-xl rounded-3xl p-8 shadow-2xl border border-white/20 hover:bg-primary/50 transition-all duration-500 relative overflow-hidden">
+            <div className="bg-secondary/30 backdrop-blur-xl rounded-3xl p-8 shadow-2xl border border-primary/20 hover:bg-secondary/40 transition-all duration-500 relative overflow-hidden">
               <div className="absolute -top-2 -left-2 w-8 h-8 border-l-4 border-t-4 border-secondary rounded-tl-2xl opacity-60"></div>
               <div className="absolute -bottom-2 -right-2 w-8 h-8 border-r-4 border-b-4 border-secondary rounded-br-2xl opacity-60"></div>
               
@@ -133,7 +133,7 @@ function ColowatchStudies() {
                 <div className="w-12 h-12 bg-secondary rounded-xl flex items-center justify-center mr-4">
                   <FaCogs className="text-primary text-xl" />
                 </div>
-                <h3 className="text-3xl font-bold text-white">How It Works</h3>
+                <h3 className="text-3xl font-bold text-primary">How It Works</h3>
               </div>
               
               <div className="space-y-4">
@@ -162,8 +162,8 @@ function ColowatchStudies() {
                   <div key={index} className="flex items-start space-x-3 p-4 rounded-xl hover:bg-white/5 transition-colors group">
                     <span className="text-2xl group-hover:scale-110 transition-transform duration-300">{feature.icon}</span>
                     <div>
-                      <h4 className="font-semibold text-white mb-1">{feature.title}</h4>
-                      <p className="text-white/80">{feature.desc}</p>
+                      <h4 className="font-semibold text-primary mb-1">{feature.title}</h4>
+                      <p className="text-primary/80">{feature.desc}</p>
                     </div>
                   </div>
                 ))}
@@ -226,7 +226,7 @@ function ColowatchStudies() {
 
         {/* Enhanced Technology Stack */}
         <div className="mb-20">
-          <div className="bg-primary/40 backdrop-blur-xl rounded-3xl p-8 shadow-2xl border border-white/20 relative overflow-hidden">
+          <div className="bg-secondary/30 backdrop-blur-xl rounded-3xl p-8 shadow-2xl border border-primary/20 relative overflow-hidden">
             <div className="absolute -top-2 -left-2 w-8 h-8 border-l-4 border-t-4 border-secondary rounded-tl-2xl opacity-60"></div>
             <div className="absolute -bottom-2 -right-2 w-8 h-8 border-r-4 border-b-4 border-secondary rounded-br-2xl opacity-60"></div>
             
@@ -235,7 +235,7 @@ function ColowatchStudies() {
                 <span className="w-2 h-2 bg-secondary rounded-full mr-2 animate-pulse"></span>
                 Technology Stack
               </div>
-              <h3 className="text-3xl font-bold text-white mb-4">
+              <h3 className="text-3xl font-bold text-primary mb-4">
                 Powered by Advanced Healthcare Technology
               </h3>
             </div>
@@ -249,8 +249,8 @@ function ColowatchStudies() {
               ].map((tech, index) => (
                 <div key={index} className="text-center p-6 rounded-2xl bg-white/5 backdrop-blur-sm hover:bg-white/10 transition-all duration-300 border border-white/10 hover:border-secondary/30 group">
                   <div className="text-4xl mb-4 flex justify-center group-hover:scale-110 transition-transform duration-300">{tech.icon}</div>
-                  <h4 className="font-bold text-white mb-2">{tech.title}</h4>
-                  <p className="text-white/80 text-sm">{tech.desc}</p>
+                  <h4 className="font-bold text-primary mb-2">{tech.title}</h4>
+                  <p className="text-primary/80 text-sm">{tech.desc}</p>
                 </div>
               ))}
             </div>
