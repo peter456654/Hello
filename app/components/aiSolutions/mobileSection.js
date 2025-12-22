@@ -15,7 +15,7 @@ const ServiceCard = ({ title, icon: Icon, description, isOpen, onClick, index })
       className="w-full"
       style={{ animationDelay: `${index * 100}ms` }}
     >
-      <div className="bg-primary/30 backdrop-blur-xl border border-white/10 rounded-2xl hover:bg-primary/40 hover:border-secondary/30 transition-all duration-500 overflow-hidden shadow-lg shadow-secondary/10">
+      <div className="bg-secondary/30 backdrop-blur-xl border border-primary/10 rounded-2xl hover:bg-secondary/40 hover:border-primary/30 transition-all duration-500 overflow-hidden shadow-lg shadow-secondary/10">
         
         {/* Header */}
         <div 
@@ -25,17 +25,17 @@ const ServiceCard = ({ title, icon: Icon, description, isOpen, onClick, index })
           <div className="flex items-center gap-3 md:gap-4">
             <div className="w-10 h-10 md:w-12 md:h-12 bg-secondary/20 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
               <Icon 
-                className="text-lg md:text-xl text-secondary group-hover:text-white transition-colors duration-300" 
+                className="text-lg md:text-xl text-primary group-hover:text-primary transition-colors duration-300" 
               />
             </div>
-            <h3 className="text-white text-base md:text-lg font-medium group-hover:text-secondary transition-colors duration-300">
+            <h3 className="text-primary text-base md:text-lg font-medium group-hover:text-primary transition-colors duration-300">
               {title}
             </h3>
           </div>
           
           <div className="w-8 h-8 bg-secondary/20 rounded-full flex items-center justify-center group-hover:bg-secondary/30 transition-all duration-300">
             <MdKeyboardArrowDown 
-              className={`text-lg text-secondary transition-all duration-300 ${
+              className={`text-lg text-primary transition-all duration-300 ${
                 isOpen ? 'rotate-180' : 'rotate-0'
               }`}
             />
@@ -51,8 +51,8 @@ const ServiceCard = ({ title, icon: Icon, description, isOpen, onClick, index })
           } overflow-hidden transition-all duration-500 ease-out`}
         >
           <div className="px-4 md:px-6 pb-4 md:pb-6">
-            <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 md:p-6 border border-white/10">
-              <p className="text-white/90 leading-relaxed text-sm md:text-base">
+            <div className="bg-secondary/5 backdrop-blur-sm rounded-xl p-4 md:p-6 border border-primary/10">
+              <p className="text-primary/90 leading-relaxed text-sm md:text-base">
                 {description}
               </p>
             </div>
@@ -127,7 +127,7 @@ const MobileSection = () => {
   };
 
   return (
-    <div className="relative bg-primary overflow-hidden py-8 px-4 md:hidden">
+    <div className="relative bg-secondary overflow-hidden py-8 px-4 md:hidden">
       {/* Background Decorative Elements */}
       <div className="absolute inset-0 opacity-8">
         <div className="absolute top-10 left-10 w-20 h-20 bg-secondary/15 rounded-full"></div>
@@ -139,24 +139,24 @@ const MobileSection = () => {
       {/* Floating Elements */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-16 left-8 w-1 h-1 bg-secondary rounded-full"></div>
-        <div className="absolute top-24 right-10 w-1 h-1 bg-white/50 rounded-full"></div>
+        <div className="absolute top-24 right-10 w-1 h-1 bg-primary/50 rounded-full"></div>
         <div className="absolute bottom-28 left-1/5 w-2 h-2 bg-secondary/60 rounded-full"></div>
-        <div className="absolute top-1/2 right-1/3 w-1 h-1 bg-white/30 rounded-full"></div>
+        <div className="absolute top-1/2 right-1/3 w-1 h-1 bg-primary/30 rounded-full"></div>
       </div>
 
       {/* Section Header */}
       <div className="text-center mb-8 relative z-10">
-        <div className="inline-flex items-center px-4 py-2 rounded-full border border-secondary/30 bg-white/5 backdrop-blur-sm mb-6">
-          <span className="text-secondary text-sm font-medium">— AI Services —</span>
+        <div className="inline-flex items-center px-4 py-2 rounded-full border border-secondary/30 bg-secondary/5 backdrop-blur-sm mb-6">
+          <span className="text-primary text-sm font-medium">— AI Services —</span>
         </div>
         
-        <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
-          Our <span className="bg-gradient-to-r from-secondary via-cyan-400 to-secondary bg-clip-text text-transparent">AI Solutions</span>
+        <h2 className="text-2xl md:text-3xl font-bold text-primary mb-4">
+          Our <span className="">AI Solutions</span>
         </h2>
         
         <div className="w-16 h-1 bg-gradient-to-r from-secondary to-transparent rounded-full mx-auto mb-4"></div>
         
-        <p className="text-white/80 text-sm leading-relaxed max-w-sm mx-auto">
+        <p className="text-primary/80 text-sm leading-relaxed max-w-sm mx-auto">
           Comprehensive AI services designed to transform your business with cutting-edge technology
         </p>
       </div>
