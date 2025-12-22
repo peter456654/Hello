@@ -157,7 +157,7 @@ const AitraneeForm = () => {
                         </div>
 
                         <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-bold text-white mb-6 md:mb-8 leading-tight">
-                            Apply <span className="bg-gradient-to-r from-secondary via-cyan-400 to-secondary bg-clip-text text-transparent">Now</span>
+                            Apply <span className="bg-gradient-to-r from-primary via-primary-400 to-primary bg-clip-text text-transparent">Now</span>
                         </h2>
 
                         {/* Decorative underline */}

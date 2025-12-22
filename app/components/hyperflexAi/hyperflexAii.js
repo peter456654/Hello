@@ -51,7 +51,7 @@ function Hyperflexai() {
             Academic Search Engine
           </div>
           <h1 className="text-5xl lg:text-6xl font-bold text-primary mb-8 leading-tight">
-            Hyperflx: The <span className="bg-gradient-to-r from-secondary via-cyan-400 to-secondary bg-clip-text text-transparent">Smarter Way</span> to Search for Academic Knowledge
+            Hyperflx: The <span className="bg-gradient-to-r from-secondary via-primary-400 to-secondary bg-clip-text text-transparent">Smarter Way</span> to Search for Academic Knowledge
           </h1>
           <div className="max-w-4xl mx-auto">
             <div className="bg-secondary/30 backdrop-blur-xl rounded-3xl p-8 shadow-2xl border border-primary/20 hover:bg-secondary/40 transition-all duration-500 relative overflow-hidden">

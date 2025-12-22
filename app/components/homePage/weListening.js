@@ -28,7 +28,8 @@ const WeListening = () => {
     setResponseMessage('');
 
     try {
-      const response = await fetch('https://prod-api.codework.ai/api/v1/marketing_site/add_contact_details', {
+      const url = `${process.env.NEXT_PUBLIC_API_BASE_URL}/marketing_site/add_contact_details`;
+      const response = await fetch(url, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

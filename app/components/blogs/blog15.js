@@ -138,13 +138,13 @@ const Blog15 = () => {
 
           {/* META */}
           <div className="flex items-center text-sm text-primary mb-10 space-x-3">
-            <div className="w-8 h-8 rounded-full bg-cyan-400/20 flex items-center justify-center text-cyan-400 font-extrabold drop-shadow-glow">
+            <div className="w-8 h-8 rounded-full bg-primary-400/20 flex items-center justify-center text-primary-400 font-extrabold drop-shadow-glow">
               F
             </div>
             <span className="uppercase tracking-wide font-semibold">Felista</span>
             <span>•</span>
             <div className="flex items-center">
-              <FiClock className="mr-1 text-cyan-400" />
+              <FiClock className="mr-1 text-primary-400" />
               <span>16 July 2025</span>
             </div>
           </div>

@@ -35,7 +35,7 @@ const AiPdflanding = () => {
 
           {/* Enhanced Heading with Gradient Text */}
           <h1 className="text-3xl md:text-4xl font-bold mb-6 leading-tight">
-            <span className="bg-gradient-to-r from-secondary via-cyan-400 to-secondary bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-primary via-primary-400 to-primary bg-clip-text text-transparent">
               AI-Powered
             </span>{" "}
             <span className="text-white">PDF Translator</span>

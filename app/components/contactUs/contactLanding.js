@@ -51,14 +51,19 @@ const ContactLanding = () => {
     setLoading(true);
     setResponseMessage("");
 
-    const url = `${process.env.NEXT_PUBLIC_API_BASE_URL}/marketing_site/add_demo_contact`;
-    console.log("Submitting to:", url);
+    const url = `${process.env.NEXT_PUBLIC_API_BASE_URL}/marketing_site/add_contact_details`;
+    const payload = {
+      name: `${formData.first_name} ${formData.last_name}`.trim(),
+      email: formData.email,
+      subject: "Contact Sales",
+      message: formData.referral,
+    };
 
     try {
       const res = await fetch(url, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
+        body: JSON.stringify(payload),
       });
 
       const result = await res.json();
