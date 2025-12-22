@@ -28,7 +28,7 @@ function SignatureOverView() {
             Signature Recognition System
           </div>
           <h2 className="text-5xl font-bold text-primary mb-4">
-            Advanced Handwritten <span className="bg-gradient-to-r from-secondary via-cyan-400 to-secondary bg-clip-text text-transparent">Signature Recognition System</span>
+            Advanced Handwritten <span className="bg-gradient-to-r from-primary via-primary-400 to-primary bg-clip-text text-transparent">Signature Recognition System</span>
           </h2>
           <p className="mt-4 text-primary/80 max-w-4xl leading-relaxed border-l-4 border-secondary/40 pl-6">
             Our Advanced Handwritten Signature Recognition System makes signature verification faster, smarter, 

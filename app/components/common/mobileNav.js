@@ -104,12 +104,12 @@ export default function MobileNavbar() {
   };
 
   return (
-    <div className="fixed top-0 left-0 w-full z-50 bg-primary shadow-lg">
+    <div className="fixed top-0 left-0 w-full z-50 bg-secondary shadow-lg">
       {/* Header Bar */}
-      <div className="flex items-center justify-between px-4 py-3 bg-primary/95 backdrop-blur-sm border-b border-secondary/20">
+      <div className="flex items-center justify-between px-4 py-3 bg-secondary/95 backdrop-blur-sm border-b border-primary/20">
         {/* Logo */}
         <Link href="/" className="flex items-center">
-          <div className="hover:bg-white/20 transition-all duration-300">
+          <div className="hover:bg-primary/20 transition-all duration-300">
             <Image src="/Logo.svg" alt="Company Logo" width={120} height={40} priority />
           </div>
         </Link>
@@ -117,23 +117,23 @@ export default function MobileNavbar() {
         {/* Hamburger Icon */}
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="relative w-10 h-10 flex items-center justify-center hover:bg-white/20 focus:outline-none focus:ring-2 focus:ring-secondary/50 transition-all duration-300 group"
+          className="relative w-10 h-10 flex items-center justify-center hover:bg-primary/20 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all duration-300 group"
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
         >
           <div className="relative w-6 h-6">
             {/* Animated Hamburger Lines */}
             <span
-              className={`absolute top-1 left-0 w-6 h-0.5 bg-secondary rounded-full transition-all duration-300 ${
+              className={`absolute top-1 left-0 w-6 h-0.5 bg-primary rounded-full transition-all duration-300 ${
                 isMenuOpen ? "rotate-45 translate-y-2" : "rotate-0"
               }`}
             />
             <span
-              className={`absolute top-1/2 left-0 w-6 h-0.5 bg-secondary rounded-full transition-all duration-300 ${
+              className={`absolute top-1/2 left-0 w-6 h-0.5 bg-primary rounded-full transition-all duration-300 ${
                 isMenuOpen ? "opacity-0" : "opacity-100"
               }`}
             />
             <span
-              className={`absolute bottom-1 left-0 w-6 h-0.5 bg-secondary rounded-full transition-all duration-300 ${
+              className={`absolute bottom-1 left-0 w-6 h-0.5 bg-primary rounded-full transition-all duration-300 ${
                 isMenuOpen ? "-rotate-45 -translate-y-2" : "rotate-0"
               }`}
             />
@@ -147,7 +147,7 @@ export default function MobileNavbar() {
           isMenuOpen
             ? "max-h-screen opacity-100 translate-y-0"
             : "max-h-0 opacity-0 -translate-y-4"
-        } overflow-hidden transition-all duration-500 ease-out bg-primary/98 backdrop-blur-md border-b border-secondary/20`}
+        } overflow-hidden transition-all duration-500 ease-out bg-secondary/98 backdrop-blur-md border-b border-primary/20`}
       >
         <div className="px-4 py-2 space-y-1">
           {navLinks.map((item, index) => (
@@ -159,7 +159,7 @@ export default function MobileNavbar() {
               style={{ animationDelay: `${index * 100}ms` }}
             >
               {/* Main Navigation Item */}
-              <div className="bg-white/5 rounded-xl border border-white/10 hover:bg-white/10 hover:border-secondary/30 transition-all duration-300">
+              <div className="bg-primary/5 rounded-xl border border-primary/10 hover:bg-primary/10 hover:border-primary/30 transition-all duration-300">
                 <button
                   className="w-full flex items-center justify-between px-4 py-3 text-left"
                   onClick={() => {
@@ -171,7 +171,7 @@ export default function MobileNavbar() {
                     }
                   }}
                 >
-                  <span className="text-white font-medium text-base hover:text-secondary transition-colors duration-300">
+                  <span className="text-primary font-medium text-base hover:text-primary/80 transition-colors duration-300">
                     {item.label}
                   </span>
                   {item.dropdown.length > 0 && (
@@ -181,7 +181,7 @@ export default function MobileNavbar() {
                       }`}
                     >
                       <svg
-                        className="w-4 h-4 text-secondary"
+                        className="w-4 h-4 text-primary"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
@@ -217,11 +217,11 @@ export default function MobileNavbar() {
                           style={{ animationDelay: `${dropIndex * 100}ms` }}
                           onClick={() => setIsMenuOpen(false)}
                         >
-                          <h3 className="font-medium text-secondary text-sm mb-1 group-hover:text-white transition-colors duration-300">
+                          <h3 className="font-medium text-primary text-sm mb-1 group-hover:text-primary transition-colors duration-300">
                             {dropdownItem.label}
                           </h3>
                           {dropdownItem.description && (
-                            <p className="text-white/70 text-xs leading-relaxed group-hover:text-white/90 transition-colors duration-300">
+                            <p className="text-primary/70 text-xs leading-relaxed group-hover:text-primary/90 transition-colors duration-300">
                               {dropdownItem.description}
                             </p>
                           )}
@@ -245,7 +245,7 @@ export default function MobileNavbar() {
                 onClick={() => setIsMenuOpen(false)}
               >
                 <span className="relative z-10">Get Started</span>
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-primary/20 to-transparent transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out"></div>
               </button>
             </Link>
           </div>
@@ -255,7 +255,7 @@ export default function MobileNavbar() {
       {/* Backdrop Overlay */}
       {isMenuOpen && (
         <div
-          className="fixed inset-0 top-16 bg-primary/80 backdrop-blur-sm opacity-50"
+          className="fixed inset-0 top-16 bg-secondary/80 backdrop-blur-sm opacity-50"
           onClick={() => setIsMenuOpen(false)}
         />
       )}

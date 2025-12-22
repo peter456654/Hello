@@ -36,7 +36,7 @@ const WebScrapingLanding = () => {
           {/* Enhanced Heading with Gradient Text */}
           <h1 className="text-3xl md:text-4xl font-bold mb-6 leading-tight">
             Get the{" "}
-            <span className="bg-gradient-to-r from-secondary via-cyan-400 to-secondary bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-primary via-primary-400 to-primary bg-clip-text text-transparent">
               Data
             </span>{" "}
             <span className="text-primary">Your Business Needs</span>

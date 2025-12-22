@@ -28,7 +28,7 @@ function WebScrapingService() {
             Web data extraction
           </div>
           <h2 className="text-5xl font-bold text-primary mb-6">
-            Introduction: <span className="bg-gradient-to-r from-secondary via-cyan-400 to-secondary text-transparent bg-clip-text">Why Data Matters for Businesses</span>
+            Introduction: <span className="bg-gradient-to-r from-primary via-primary-400 to-primary text-transparent bg-clip-text">Why Data Matters for Businesses</span>
           </h2>
           <p className="text-primary/90 leading-relaxed border-l-4 border-secondary/40 pl-4 max-w-4xl">
             In today’s digital world, data is the key to growth. Whether you’re tracking competitors, finding leads, or understanding market trends — 

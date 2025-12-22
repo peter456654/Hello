@@ -25,7 +25,7 @@ function TextAnalytic() {
             Text Analytics
           </div>
           <h2 className="text-5xl font-bold text-primary mb-4">
-            Smart Communication for <span className="bg-gradient-to-r from-secondary via-cyan-400 to-secondary bg-clip-text text-transparent">Better Care</span>
+            Smart Communication for <span className="bg-gradient-to-r from-primary via-primary-400 to-primary bg-clip-text text-transparent">Better Care</span>
           </h2>
           <p className="mt-4 text-primary/90 max-w-3xl leading-relaxed border-l-4 border-secondary/40 pl-6">
             Effective communication is the heart of quality caregiving. But it’s not always clearly understood or recognized. With the help of AI, our Text Analytics Project transforms regular conversations into insights that enhance the caregiver experience.

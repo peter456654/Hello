@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { IoChevronBack, IoChevronForward } from 'react-icons/io5';
 import { servicesData } from '../services/ourServices';
@@ -9,6 +9,8 @@ const AIKeynoteCarousel = () => {
   const topics = servicesData;
 
   const [activeIndex, setActiveIndex] = useState(2);
+  const topNavContainerRef = useRef(null);
+  const topBtnRefs = useRef([]);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -25,17 +27,26 @@ const AIKeynoteCarousel = () => {
     setActiveIndex((prev) => (prev + 1) % topics.length);
   };
 
+  useEffect(() => {
+    const el = topBtnRefs.current[activeIndex];
+    if (el && topNavContainerRef.current) {
+      el.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+    }
+  }, [activeIndex]);
+
   return (
     <div className="min-h-screen pt-24 bg-secondary text-primary">
       {/* Top Carousel Navigation */}
       <div className="relative px-8 py-6 overflow-hidden">
         <div className="flex items-center justify-between max-w-7xl mx-auto">
           <div className="flex-1 overflow-hidden">
-            <div className="flex gap-3 items-center">
+            <div ref={topNavContainerRef} className="flex gap-3 items-center overflow-x-auto scroll-smooth whitespace-nowrap hide-scrollbar">
               {topics.map((svc, idx) => (
                 <Link key={idx} href={svc.link}>
                   <button
+                    ref={(el) => (topBtnRefs.current[idx] = el)}
                     onMouseEnter={() => setActiveIndex(idx)}
+                    onClick={() => setActiveIndex(idx)}
                     className={`px-6 py-2.5 rounded-full whitespace-nowrap text-sm font-medium transition-all duration-300 border ${
                       idx === activeIndex
                         ? 'bg-primary text-secondary border-secondary/20'
@@ -105,3 +116,12 @@ const AIKeynoteCarousel = () => {
 };
 
 export default AIKeynoteCarousel;
+<style jsx>{`
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+`}</style>

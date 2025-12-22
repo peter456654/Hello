@@ -88,20 +88,20 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #007d84; /* secondary color */
+  background: #000000; /* secondary color */
   border-radius: 2px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(0, 181, 190, 0.8); /* secondary color with opacity on hover */
+  background: rgba(0, 0, 0, 0.8); /* secondary color with opacity on hover */
 }
 
 ::-webkit-scrollbar-corner {
-  background: rgba(34, 48, 68, 0.3);
+  background: rgba(0, 0, 0, 0.3);
 }
 
 /* Firefox scrollbar */
 * {
   scrollbar-width: thin;
-  scrollbar-color: #16c0c9 rgba(34, 48, 68, 0.3);
+  scrollbar-color: #000000 rgba(34, 48, 68, 0.3);
 }

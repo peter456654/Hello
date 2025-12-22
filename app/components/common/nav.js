@@ -58,6 +58,20 @@ export default function Navbar() {
     }
   }, [pathname]);
 
+  useEffect(() => {
+    const open =
+      isDropdownOpen !== null &&
+      navLinks[isDropdownOpen]?.dropdown?.length > 0;
+    if (open) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isDropdownOpen]);
+
   // Enhanced hover handlers
   const handleMouseEnter = (index) => {
     if (dropdownTimeoutRef.current) {
