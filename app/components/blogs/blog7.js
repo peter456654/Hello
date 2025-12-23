@@ -39,10 +39,10 @@ const Blog7 = () => {
   }, []);
 
   return (
-    <div className="bg-primary py-12 pt-40 min-h-screen">
+    <div className="bg-secondary py-12 pt-40 min-h-screen">
       <div className="max-w-screen-xl mx-auto px-4 flex gap-8">
         <div className="hidden lg:block w-64 sticky top-24 h-fit">
-          <div className="bg-primary/60 backdrop-blur-sm rounded-xl border border-secondary/20 p-6 shadow-glow">
+          <div className="bg-secondary/60 backdrop-blur-sm rounded-xl border border-primary/20 p-6 shadow-glow">
             <h3 className="text-lg font-bold text-primary mb-4 flex items-center">
               <FiList className="mr-2" />
               Table of Contents
@@ -74,7 +74,7 @@ const Blog7 = () => {
 
         {isTocOpen && (
           <div className="lg:hidden fixed inset-0 z-40 bg-secondary/50" onClick={() => setIsTocOpen(false)}>
-            <div className="bg-primary w-80 h-full overflow-y-auto p-6 shadow-xl" onClick={e => e.stopPropagation()}>
+            <div className="bg-secondary w-80 h-full overflow-y-auto p-6 shadow-xl" onClick={e => e.stopPropagation()}>
               <h3 className="text-lg font-bold text-primary mb-4 flex items-center">
                 <FiList className="mr-2" />
                 Table of Contents
@@ -116,7 +116,7 @@ const Blog7 = () => {
             />
           </div>
 
-          <div className="flex items-center text-sm text-white mb-10 space-x-3">
+          <div className="flex items-center text-sm text-primary mb-10 space-x-3">
             <div className="w-8 h-8 rounded-full bg-cyan-400/20 flex items-center justify-center text-cyan-400 font-extrabold drop-shadow-glow">
               F
             </div>
@@ -129,21 +129,21 @@ const Blog7 = () => {
           </div>
 
           <section id="introduction" className="scroll-mt-24">
-            <p className="text-white/80 text-xl leading-relaxed mb-6">
+            <p className="text-primary/80 text-xl leading-relaxed mb-6">
               Colorectal‍‌‍‍‌‍‌‍‍‌ cancer is still one of the major causes of cancer-related deaths worldwide. The virtual colonoscopy through CT colonography is a non-invasive, patient-friendly diagnostic alternative. It changes the way the radiologists and imaging technicians work with AI-driven segmentation, automated study workflows, and DICOM-to-3D visualization all integrated in one platform - next-generation platform Radi Insight 3D.
             </p>
           </section>
 
           <section id="bridging-the-gap" className="scroll-mt-24">
-            <h2 className="text-2xl font-semibold text-white mb-4">Bridging the Gap in Digital Diagnostic Workflows</h2>
-            <p className="text-white/80 leading-relaxed mb-6">
+            <h2 className="text-2xl font-semibold text-primary mb-4">Bridging the Gap in Digital Diagnostic Workflows</h2>
+            <p className="text-primary/80 leading-relaxed mb-6">
               While digital health has come a long way, the fragmented systems, limited interoperability, and the complexity of DICOM data have stood in the way of the scalable implementation of virtual colonoscopy. Radi Insight 3D closes this gap by creating a seamless, integrated ecosystem that is powered by middleware connectors and intelligent data orchestration.
             </p>
           </section>
 
           <section id="key-technologies" className="scroll-mt-24">
-            <h2 className="text-2xl font-semibold text-white mb-4">Key Technologies Driving Radi Insight 3D</h2>
-            <ul className="list-disc ml-6 text-white/80 mb-6 space-y-1">
+            <h2 className="text-2xl font-semibold text-primary mb-4">Key Technologies Driving Radi Insight 3D</h2>
+            <ul className="list-disc ml-6 text-primary/80 mb-6 space-y-1">
               <li>
                 <strong>Advanced DICOM-to-3D Model Conversion:</strong> Radi Insight 3D creates an immersive 3D fly-through from the axial, coronal, and sagittal scan views that allow the abnormalities to be detected visually and quickly during the screenings.
               </li>
@@ -163,15 +163,15 @@ const Blog7 = () => {
           </section>
 
           <section id="engineering-accuracy" className="scroll-mt-24">
-            <h2 className="text-2xl font-semibold text-white mb-4">Engineering for Medical-Grade Accuracy</h2>
-            <p className="text-white/80 leading-relaxed mb-6">
+            <h2 className="text-2xl font-semibold text-primary mb-4">Engineering for Medical-Grade Accuracy</h2>
+            <p className="text-primary/80 leading-relaxed mb-6">
               The technical issues that come from the complex colorectal anatomy, the image noise, and patient-specific variations are handled by the segmentation model and data augmentation strategies of Radi Insight 3D which results in lowering false negatives and thus increasing the screening reliability.
             </p>
           </section>
 
           <section id="conclusion" className="scroll-mt-24">
-            <h2 className="text-3xl font-semibold text-white mt-8 mb-4">Conclusion</h2>
-            <p className="text-white/80 leading-relaxed mb-6">
+            <h2 className="text-3xl font-semibold text-primary mt-8 mb-4">Conclusion</h2>
+            <p className="text-primary/80 leading-relaxed mb-6">
               One of the landmarks in healthcare imaging technology is without a doubt Radi Insight 3D - the virtual colonoscopies are high-precision and can be easily scaled. The platform achieves the dream vision of smart colorectal cancer screening by combining domain-focused AI, safe system integration, and user-friendly role-based ‍‌‍‍‌‍‌‍‍‌workflow
             </p>
           </section>

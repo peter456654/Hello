@@ -50,11 +50,11 @@ const Blog8 = () => {
   }, []);
 
   return (
-    <div className="bg-primary py-12 pt-40 min-h-screen">
+    <div className="bg-secondary py-12 pt-40 min-h-screen">
       <div className="max-w-screen-xl mx-auto px-4 flex gap-8">
         {/* LEFT SIDEBAR - TABLE OF CONTENTS */}
         <div className="hidden lg:block w-64 sticky top-24 h-fit">
-          <div className="bg-primary/60 backdrop-blur-sm rounded-xl border border-secondary/20 p-6 shadow-glow">
+          <div className="bg-secondary/60 backdrop-blur-sm rounded-xl border border-primary/20 p-6 shadow-glow">
             <h3 className="text-lg font-bold text-primary mb-4 flex items-center">
               <FiList className="mr-2" />
               Table of Contents
@@ -88,7 +88,7 @@ const Blog8 = () => {
         {/* MOBILE TOC OVERLAY */}
         {isTocOpen && (
           <div className="lg:hidden fixed inset-0 z-40 bg-secondary/50" onClick={() => setIsTocOpen(false)}>
-            <div className="bg-primary w-80 h-full overflow-y-auto p-6 shadow-xl" onClick={e => e.stopPropagation()}>
+            <div className="bg-secondary w-80 h-full overflow-y-auto p-6 shadow-xl" onClick={e => e.stopPropagation()}>
               <h3 className="text-lg font-bold text-primary mb-4 flex items-center">
                 <FiList className="mr-2" />
                 Table of Contents
@@ -134,8 +134,8 @@ const Blog8 = () => {
           </div>
 
           {/* META */}
-          <div className="flex items-center text-sm text-white mb-10 space-x-3">
-            <div className="w-8 h-8 rounded-full bg-cyan-400/20 flex items-center justify-center text-cyan-400 font-extrabold drop-shadow-glow">
+          <div className="flex items-center text-sm text-primary mb-10 space-x-3">
+            <div className="w-8 h-8 rounded-full bg-cyan-400/20 flex items-center justify-center text-cyan-400.font-extrabold drop-shadow-glow">
               P
             </div>
             <span className="uppercase tracking-wide font-semibold">Prasanth</span>
@@ -148,29 +148,29 @@ const Blog8 = () => {
 
           {/* INTRODUCTION */}
           <section id="introduction" className="scroll-mt-24">
-            <p className="text-white/80 text-xl leading-relaxed mb-10">
+            <p className="text-primary/80 text-xl leading-relaxed mb-10">
               In a groundbreaking development for the global AI community, the United Arab Emirates (UAE) has become the first nation to offer all its residents free access to ChatGPT Plus. This initiative is a key part of the Stargate UAE project, a strategic collaboration between the UAE government and OpenAI.
             </p>
           </section>
 
           {/* STARGATE UAE */}
           <section id="stargate-uae" className="scroll-mt-24">
-            <h2 className="text-2xl font-bold text-white mb-4">Stargate UAE: A Bold Step in National AI Infrastructure</h2>
+            <h2 className="text-2xl font-bold text-primary mb-4">Stargate UAE: A Bold Step in National AI Infrastructure</h2>
           </section>
 
           <section id="massive-ai-data-center" className="scroll-mt-24">
-            <h3 className="text-xl font-semibold text-white/80 mb-2">Massive AI Data Center in Abu Dhabi</h3>
-            <p className="text-white/80 leading-relaxed mb-6">
+            <h3 className="text-xl font-semibold text-primary/80 mb-2">Massive AI Data Center in Abu Dhabi</h3>
+            <p className="text-primary/80 leading-relaxed mb-6">
               At the heart of this initiative lies the Stargate UAE AI data center, currently under development in Abu Dhabi. Once completed, the facility will house a one-gigawatt AI computing cluster, with the first 200 megawatts expected to go live by the end of 2026.
             </p>
           </section>
 
           <section id="driving-innovation" className="scroll-mt-24">
-            <h3 className="text-xl font-semibold text-white/80 mb-2">Driving Innovation Across Key Sectors</h3>
-            <p className="text-white/80 leading-relaxed mb-6">
+            <h3 className="text-xl font-semibold text-primary/80 mb-2">Driving Innovation Across Key Sectors</h3>
+            <p className="text-primary/80 leading-relaxed mb-6">
               This ambitious project will support advanced AI applications across various sectors, including:
             </p>
-            <ul className="list-disc ml-6 text-white/80 mb-10 space-y-1">
+            <ul className="list-disc ml-6 text-primary/80 mb-10 space-y-1">
               <li>Healthcare</li>
               <li>Education</li>
               <li>Public services</li>
@@ -179,15 +179,15 @@ const Blog8 = () => {
 
           {/* Free ChatGPT Plus Subscription */}
           <section id="free-chatgpt-plus" className="scroll-mt-24">
-            <h2 className="text-2xl font-bold text-white mb-4">Free ChatGPT Plus Subscription: Empowering UAE Residents</h2>
+            <h2 className="text-2xl font-bold text-primary mb-4">Free ChatGPT Plus Subscription: Empowering UAE Residents</h2>
           </section>
 
           <section id="what-residents-receive" className="scroll-mt-24">
-            <h3 className="text-xl font-semibold text-white/80 mb-2">What Residents Will Receive</h3>
-            <p className="text-white/80 leading-relaxed mb-6">
+            <h3 className="text-xl font-semibold text-primary/80 mb-2">What Residents Will Receive</h3>
+            <p className="text-primary/80 leading-relaxed mb-6">
               Under this partnership, UAE residents will get complimentary ChatGPT Plus access, including:
             </p>
-            <ul className="list-disc ml-6 text-white/80 mb-6 space-y-1">
+            <ul className="list-disc ml-6 text-primary/80 mb-6 space-y-1">
               <li>Use of the advanced GPT-4o model</li>
               <li>Enhanced response speed and prioritized access during high-traffic periods</li>
               <li>Access to the latest AI-powered tools for writing, learning, coding, and more</li>
@@ -195,23 +195,23 @@ const Blog8 = () => {
           </section>
 
           <section id="democratizing-ai" className="scroll-mt-24">
-            <h3 className="text-xl font-semibold text-white/80 mb-2">Democratizing AI for All</h3>
-            <p className="text-white/80 leading-relaxed mb-10">
+            <h3 className="text-xl font-semibold text-primary/80 mb-2">Democratizing AI for All</h3>
+            <p className="text-primary/80 leading-relaxed mb-10">
               This groundbreaking initiative is designed to democratize artificial intelligence, making advanced AI tools available to everyone and reshaping how people in the UAE work, learn, and live.
             </p>
           </section>
 
           {/* Strategic Alliances */}
           <section id="strategic-alliances" className="scroll-mt-24">
-            <h2 className="text-2xl font-bold text-white mb-4">Strategic Alliances to Boost AI Innovation</h2>
+            <h2 className="text-2xl font-bold text-primary mb-4">Strategic Alliances to Boost AI Innovation</h2>
           </section>
 
           <section id="global-tech-leaders" className="scroll-mt-24">
-            <h3 className="text-xl font-semibold text-white/80 mb-2">Collaboration with Global Tech Leaders</h3>
-            <p className="text-white/80 leading-relaxed mb-6">
+            <h3 className="text-xl font-semibold text-primary/80 mb-2">Collaboration with Global Tech Leaders</h3>
+            <p className="text-primary/80 leading-relaxed mb-6">
               The UAE's AI strategy is further strengthened by partnerships with global tech giants such as:
             </p>
-            <ul className="list-disc ml-6 text-white/80 mb-6 space-y-1">
+            <ul className="list-disc ml-6 text-primary/80 mb-6 space-y-1">
               <li>Oracle</li>
               <li>Nvidia</li>
               <li>Cisco</li>
@@ -221,8 +221,8 @@ const Blog8 = () => {
           </section>
 
           <section id="focus-areas" className="scroll-mt-24">
-            <h3 className="text-xl font-semibold text-white/80 mb-2">Focus Areas of the Alliance</h3>
-            <ul className="list-disc ml-6 text-white/80 mb-10 space-y-1">
+            <h3 className="text-xl font-semibold text-primary/80 mb-2">Focus Areas of the Alliance</h3>
+            <ul className="list-disc ml-6 text-primary/80 mb-10 space-y-1">
               <li>Developing localized AI tools</li>
               <li>Ensuring data privacy and regulatory compliance</li>
               <li>Fostering an ecosystem for responsible AI use</li>
@@ -231,8 +231,8 @@ const Blog8 = () => {
 
           {/* Global Impact */}
           <section id="global-impact" className="scroll-mt-24">
-            <h2 className="text-2xl font-bold text-white mb-4">Paving the Way for Global AI Adoption</h2>
-            <p className="text-white/80 leading-relaxed mb-6">
+            <h2 className="text-2xl font-bold text-primary mb-4">Paving the Way for Global AI Adoption</h2>
+            <p className="text-primary/80 leading-relaxed mb-6">
               With this landmark initiative, the UAE is setting a new benchmark in AI adoption and innovation. By providing free ChatGPT Plus subscriptions and investing in national infrastructure, the country is not only empowering its citizens but also solidifying its position as a global leader in artificial intelligence.
             </p>
           </section>
