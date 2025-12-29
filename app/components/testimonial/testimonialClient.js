@@ -45,6 +45,9 @@ const TestimonialClient = () => {
   const prevIndex = (active - 1 + testimonials.length) % testimonials.length;
   const nextIndex = (active + 1) % testimonials.length;
   const renderCard = (t, position) => {
+    const isReducedLogo =
+      t.avatar === "/testimonial/cwmainlogo.png" ||
+      t.avatar === "/testimonial/loviomainlogo.png";
     const isCenter = position === "center";
     const translate =
       position === "left"
@@ -67,7 +70,11 @@ const TestimonialClient = () => {
       >
         <div className="relative">
           <div className="absolute -top-10 left-1/2 -translate-x-1/2 w-16 h-16 sm:w-20 sm:h-20 rounded-full ring-4 ring-white shadow-xl overflow-hidden bg-white">
-            <img src={t.avatar} alt={t.name} className="w-full h-full object-cover" />
+            <img
+              src={t.avatar}
+              alt={t.name}
+              className={`w-full h-full object-contain ${isReducedLogo ? "p-3" : "p-2"}`}
+            />
           </div>
           <div className="bg-white text-primary rounded-2xl shadow-2xl border border-white/60 p-6 sm:p-8 md:p-10">
             <div className="pt-6 sm:pt-8 md:pt-10 text-center">

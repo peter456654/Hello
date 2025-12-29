@@ -206,11 +206,6 @@ const Blog26 = () => {
             <p className="text-primary/80 leading-relaxed mb-6">
               Codework's AI engineers ensure a seamless transformation by applying proven expertise and delivering tailor-made solutions.
             </p>
-            <div className="bg-primary/10 border border-primary/30 rounded-lg p-6 mb-10">
-              <p className="text-primary font-semibold text-center">
-                Get a free consultation
-              </p>
-            </div>
           </section>
 
           {/* SECTION: Our Problem-Solving Approach */}
