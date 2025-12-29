@@ -140,38 +140,6 @@ const PrivacyPolicyPage = () => (
               to analyze web traffic or show targeted advertising. You can learn
               more about managing cookies through:
             </p>
-            <ul className="list-disc ml-6 space-y-2">
-              <li>
-                <a
-                  href="https://www.eucookie.eu/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-primary hover:text-primary/80 underline transition-colors duration-300"
-                >
-                  EU Cookie Guide
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://ico.org.uk/for-organisations/guide-to-pecr/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-primary hover:text-primary/80 underline transition-colors duration-300"
-                >
-                  UK ICO Guide
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.allaboutcookies.org/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-primary hover:text-primary/80 underline transition-colors duration-300"
-                >
-                  All About Cookies
-                </a>
-              </li>
-            </ul>
             <p>
               To opt out of Google Analytics cookies, visit:&nbsp;
               <a

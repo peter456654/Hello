@@ -103,15 +103,6 @@ const Faqs2 = () => {
           ))}
         </div>
 
-        {/* Bottom CTA */}
-        <div className="text-center mt-12">
-          <p className="text-primary/70 mb-4">
-            Still have questions about AI, LLMs, or agents?
-          </p>
-          <button className="bg-secondary hover:bg-secondary/90 text-primary font-bold py-3 px-8 rounded-lg transition-colors duration-200 shadow-lg hover:shadow-glow">
-            Ask Our AI Team
-          </button>
-        </div>
       </div>
       <style jsx>{`
         .drop-shadow-glow {

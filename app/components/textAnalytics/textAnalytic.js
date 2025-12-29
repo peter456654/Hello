@@ -20,10 +20,6 @@ function TextAnalytic() {
       <div className="container mx-auto px-8 lg:px-16 py-12 relative z-10">
         {/* ==== Headline & Introduction ==== */}
         <div className="mb-12">
-          <div className="inline-flex items-center border border-secondary/30 bg-white/5 text-primary px-6 py-3 rounded-full text-sm font-medium mb-6">
-            <span className="w-2 h-2 bg-secondary rounded-full mr-2 animate-pulse"></span>
-            Text Analytics
-          </div>
           <h2 className="text-5xl font-bold text-primary mb-4">
             Smart Communication for <span className="bg-gradient-to-r from-primary via-primary-400 to-primary bg-clip-text text-transparent">Better Care</span>
           </h2>

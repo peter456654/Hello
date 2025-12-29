@@ -6,34 +6,7 @@ const Landing = () => {
     <>
       <section className="relative w-full h-auto sm:h-[80vh] md:h-screen flex items-center justify-center bg-secondary overflow-hidden">
       {/* Interactive 3D Background */}
-      <div className="absolute inset-0 w-full h-full">
-        
-        {/* Gradient overlay for better text readability */}
-        <div
-          className="absolute inset-0 w-full h-full z-10"
-          style={{
-            background: `rgba(0,0,0,0.85)`,
-          }}
-        ></div>
-
-        {/* Enhanced animated blob shapes */}
-        {/* <div className="absolute inset-0 z-20">
-          <div className="absolute top-20 left-20 w-32 h-32 bg-secondary/10 rounded-full animate-blob blur-xl"></div>
-          <div className="absolute top-40 right-32 w-24 h-24 bg-secondary/15 rounded-full animate-blob animation-delay-2000 blur-lg"></div>
-          <div className="absolute bottom-32 left-1/3 w-40 h-40 bg-secondary/8 rounded-full animate-blob animation-delay-4000 blur-2xl"></div>
-        </div> */}
-
-        {/* Enhanced stars effect */}
-        {/* <div className="absolute inset-0 z-20">
-          <div className="absolute top-1/4 left-1/4 w-1 h-1 bg-white rounded-full opacity-60 animate-pulse"></div>
-          <div className="absolute top-1/3 right-1/3 w-0.5 h-0.5 bg-white rounded-full opacity-40 animate-pulse animation-delay-1000"></div>
-          <div className="absolute bottom-1/4 left-1/2 w-1 h-1 bg-secondary rounded-full opacity-50 animate-pulse animation-delay-2000"></div>
-          <div className="absolute top-1/2 right-1/4 w-0.5 h-0.5 bg-white rounded-full opacity-70 animate-pulse animation-delay-3000"></div>
-          <div className="absolute bottom-1/3 right-1/2 w-1 h-1 bg-white rounded-full opacity-30 animate-pulse animation-delay-4000"></div>
-          <div className="absolute top-3/4 left-1/5 w-0.5 h-0.5 bg-secondary rounded-full opacity-60 animate-pulse animation-delay-1500"></div>
-        </div> */}
-      </div>
-
+      
       {/* Content Container with higher z-index */}
       <div className="relative z-30 w-full max-w-4xl mx-auto px-4 sm:px-6 md:px-8">
         <div className="flex flex-col items-center justify-center">
