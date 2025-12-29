@@ -128,7 +128,7 @@ const Blog23 = () => {
           {/* FEATURE IMAGE */}
           <div className="relative w-full h-[400px] border-4 border-primary border-t-0 border-l-0 rounded-lg overflow-hidden mb-8 shadow-glow">
             <Image
-              src="/blog/blog23.jpg"
+              src="https://codework-ebook.s3.amazonaws.com/codework-media/blogs/young-person-vr-headset-with-laptop-symbolizing-advanced-technology-immersive-digital_72464-2290.jpg"
               alt="What Is Artificial Intelligence"
               fill
               className="object-cover"

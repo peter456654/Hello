@@ -128,7 +128,7 @@ const Blog21 = () => {
           {/* FEATURE IMAGE */}
           <div className="relative w-full h-[400px] border-4 border-primary border-t-0 border-l-0 rounded-lg overflow-hidden mb-8 shadow-glow">
             <Image
-              src="/blog/blog21.jpg"
+              src="https://codework-ebook.s3.amazonaws.com/codework-media/blogs/modern-computer-screen-with-social-network-media-concept-3d-rendering_258654-25313.jpg"
               alt="What is a Neural Network"
               fill
               className="object-cover"

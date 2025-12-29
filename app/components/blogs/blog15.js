@@ -128,7 +128,7 @@ const Blog15 = () => {
           {/* FEATURE IMAGE */}
           <div className="relative w-full h-[400px] border-4 border-primary border-t-0 border-l-0 rounded-lg overflow-hidden mb-8 shadow-glow">
             <Image
-              src="/blog/blog15.jpg"
+              src="https://codework-ebook.s3.amazonaws.com/codework-media/blogs/generative-ai-virtual-assistant-tools-prompt-engineer-end-user-snugly_31965-473234.jpg"
               alt="What is Machine Learning"
               fill
               className="object-cover"

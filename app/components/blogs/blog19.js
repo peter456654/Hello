@@ -126,7 +126,7 @@ const Blog19 = () => {
           {/* FEATURE IMAGE */}
           <div className="relative w-full h-[400px] border-4 border-primary border-t-0 border-l-0 rounded-lg overflow-hidden mb-8 shadow-glow">
             <Image
-              src="/blog/blog19.jpg"
+              src="https://codework-ebook.s3.amazonaws.com/codework-media/blogs/human-resources-officer-choose-employee-standing-out-crowd-select-team-leader-concept_488220-62208.jpg"
               alt="Demystifying Generative AI"
               fill
               className="object-cover"

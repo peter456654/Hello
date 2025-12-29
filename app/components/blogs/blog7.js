@@ -108,7 +108,7 @@ const Blog7 = () => {
 
           <div className="relative w-full h-[400px] border-4 border-primary border-t-0 border-l-0 rounded-lg overflow-hidden mb-8 shadow-glow">
             <Image
-              src="/blog/blog7.jpg"
+              src="https://codework-ebook.s3.amazonaws.com/codework-media/blogs/business-brainstorming-graph-chart-report-data-concept_53876-41686.avif"
               alt="Radi Insight 3D Virtual Colonoscopy"
               fill
               className="object-cover"

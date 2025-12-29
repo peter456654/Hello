@@ -121,7 +121,7 @@ const Blog6 = () => {
           {/* FEATURE IMAGE */}
           <div className="relative w-full h-[400px] border-4 border-primary border-t-0 border-l-0 rounded-lg overflow-hidden mb-8 shadow-glow">
             <Image
-              src="/blog/blog6.jpg"
+              src="https://codework-ebook.s3.amazonaws.com/codework-media/blogs/[Downloader.la]-6944e64e62c1e.jpg"
               alt="AI Practical Value"
               fill
               className="object-cover"

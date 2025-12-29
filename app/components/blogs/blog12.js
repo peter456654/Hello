@@ -124,7 +124,7 @@ const Blog12 = () => {
           {/* FEATURE IMAGE */}
           <div className="relative w-full h-[400px] border-4 border-primary border-t-0 border-l-0 rounded-lg overflow-hidden mb-8 shadow-glow">
             <Image
-              src="/blog/blog12.jpg"
+              src="https://codework-ebook.s3.amazonaws.com/codework-media/blogs/deepfake-concept-matching-facial-movements-face-swapping-impersonation_29488-11319.jpg"
               alt="AI in Software Development"
               fill
               className="object-cover"

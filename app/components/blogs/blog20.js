@@ -128,7 +128,7 @@ const Blog20 = () => {
           {/* FEATURE IMAGE */}
           <div className="relative w-full h-[400px] border-4 border-primary border-t-0 border-l-0 rounded-lg overflow-hidden mb-8 shadow-glow">
             <Image
-              src="/blog/blog20.jpg"
+              src="https://codework-ebook.s3.amazonaws.com/codework-media/blogs/man-designer-architect-working-new-project-using-pc-with-graphic-software_482257-8233.jpg"
               alt="What is Predictive Analytics"
               fill
               className="object-cover"

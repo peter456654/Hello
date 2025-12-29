@@ -126,7 +126,7 @@ const Blog11 = () => {
           {/* FEATURE IMAGE */}
           <div className="relative w-full h-[400px] border-4 border-primary border-t-0 border-l-0 rounded-lg overflow-hidden mb-8 shadow-glow">
             <Image
-              src="/blog/blog11.jpg"
+              src="https://codework-ebook.s3.amazonaws.com/codework-media/blogs/cropped-shot-startup-ux-ui-front-end-designers-developing-programming-coding-mobile-application-from-prototype-wireframe-layout-mobile-application-developer-workplace-concept_68339-320.jpg"
               alt="AI in Digital Marketing"
               fill
               className="object-cover"

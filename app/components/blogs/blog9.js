@@ -129,7 +129,7 @@ const Blog9 = () => {
           {/* FEATURE IMAGE */}
           <div className="relative w-full h-[400px] border-4 border-primary border-t-0 border-l-0 rounded-lg overflow-hidden mb-8 shadow-glow">
             <Image
-              src="/blog/blog9.jpg"
+              src="https://codework-ebook.s3.amazonaws.com/codework-media/blogs/closeup-african-american-entrepreneur-analyzing-company-profit_482257-20207.jpg"
               alt="Deepfake Dilemma Guide"
               fill
               className="object-cover"

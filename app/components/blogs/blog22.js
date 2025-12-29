@@ -128,7 +128,7 @@ const Blog22 = () => {
           {/* FEATURE IMAGE */}
           <div className="relative w-full h-[400px] border-4 border-primary border-t-0 border-l-0 rounded-lg overflow-hidden mb-8 shadow-glow">
             <Image
-              src="/blog/blog22.jpg"
+              src="https://codework-ebook.s3.amazonaws.com/codework-media/blogs/woman-uses-ai-chatbot-system-computer-guide-her-through-tasks_482257-118915.avif"
               alt="What is CI/CD"
               fill
               className="object-cover"

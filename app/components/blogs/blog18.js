@@ -125,7 +125,7 @@ const Blog18 = () => {
           {/* FEATURE IMAGE */}
           <div className="relative w-full h-[400px] border-4 border-primary border-t-0 border-l-0 rounded-lg overflow-hidden mb-8 shadow-glow">
             <Image
-              src="/blog/blog18.jpg"
+              src="https://codework-ebook.s3.amazonaws.com/codework-media/blogs/hacker-girl-using-dangerous-malware-attack-government-database_482257-20620.jpg"
               alt="Mixture of Experts"
               fill
               className="object-cover"

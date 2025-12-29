@@ -124,7 +124,7 @@ const Blog13 = () => {
           {/* FEATURE IMAGE */}
           <div className="relative w-full h-[400px] border-4 border-primary border-t-0 border-l-0 rounded-lg overflow-hidden mb-8 shadow-glow">
             <Image
-              src="/blog/blog13.jpg"
+              src="https://codework-ebook.s3.amazonaws.com/codework-media/blogs/double-exposure-caucasian-man-virtual-reality-vr-headset-is-presumably-gamer-hacker-cracking-code-into-secure-network-server-with-lines-code_146671-18938.jpg"
               alt="Code Generation Automation with AI"
               fill
               className="object-cover"
