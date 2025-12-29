@@ -23,10 +23,7 @@ function SignatureOverView() {
         
         {/* ==== Intro Section ==== */}
         <div className="mb-12">
-          <div className="inline-flex items-center border border-secondary/30 bg-primary/5 text-secondary px-6 py-2 rounded-full text-sm font-medium mb-6">
-            <span className="w-2 h-2 bg-secondary rounded-full mr-2 animate-pulse"></span>
-            Signature Recognition System
-          </div>
+          
           <h2 className="text-5xl font-bold text-primary mb-4">
             Advanced Handwritten <span className="bg-gradient-to-r from-primary via-primary-400 to-primary bg-clip-text text-transparent">Signature Recognition System</span>
           </h2>

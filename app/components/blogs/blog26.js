@@ -56,6 +56,7 @@ const Blog26 = () => {
         {/* LEFT SIDEBAR - TABLE OF CONTENTS */}
         <div className="hidden lg:block w-64 sticky top-24 h-fit">
           <div className="bg-secondary backdrop-blur-sm rounded-xl border border-primary/60 p-6 shadow-glow">
+
             <h3 className="text-lg font-bold text-primary mb-4 flex items-center">
               <FiList className="mr-2" />
               Table of Contents
@@ -70,8 +71,8 @@ const Blog26 = () => {
                   onClick={() => scrollToSection(item.id)}
                   className={`block w-full text-left px-3 py-2 rounded-lg text-sm transition-all duration-200 ${
                     activeSection === item.id
-                      ? "bg-primary/20 text-primary border-l-4 border-primary"
-                      : "text-primary hover:text-primary/80 hover:bg-primary/5"
+                      ? "bg-secondary/20 text-primary border-l-4 border-primary"
+                      : "text-primary hover:text-primary/80 hover:bg-secondary/10"
                   }`}
                 >
                   {index + 1}. {item.title}
@@ -92,7 +93,7 @@ const Blog26 = () => {
         {/* MOBILE TOC OVERLAY */}
         {isTocOpen && (
           <div className="lg:hidden fixed inset-0 z-40 bg-secondary/50" onClick={() => setIsTocOpen(false)}>
-            <div className="bg-primary w-80 h-full overflow-y-auto p-6 shadow-xl" onClick={e => e.stopPropagation()}>
+            <div className="bg-secondary w-80 h-full overflow-y-auto p-6 shadow-xl" onClick={e => e.stopPropagation()}>
               <h3 className="text-lg font-bold text-primary mb-4 flex items-center">
                 <FiList className="mr-2" />
                 Table of Contents
@@ -107,8 +108,8 @@ const Blog26 = () => {
                     }}
                     className={`block w-full text-left px-3 py-2 rounded-lg text-sm transition-all duration-200 ${
                       activeSection === item.id
-                        ? "bg-primary/20 text-primary border-l-4 border-primary"
-                        : "text-primary hover:text-primary/80 hover:bg-primary/5"
+                        ? "bg-secondary/20 text-primary border-l-4 border-primary"
+                        : "text-primary hover:text-primary/80 hover:bg-secondary/10"
                     }`}
                   >
                     {index + 1}. {item.title}

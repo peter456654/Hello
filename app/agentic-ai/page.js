@@ -355,20 +355,6 @@ const AgenticAIPage = () => {
             Codework's Agentic AI services empower enterprises with independence, flexibility, and deep cognitive capabilities. From optimizing workforce productivity to catalyzing breakthrough innovations, our offerings transform your operation into a platform of heightened intelligence, accelerated velocity, and enduring future-readiness.
           </p>
 
-          {/* CTA Button */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="group relative px-8 py-4 bg-secondary text-primary font-bold rounded-full overflow-hidden hover:shadow-xl hover:shadow-secondary/25 transition-all duration-300">
-              <span className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
-              <span className="relative">Start Your Agentic AI Journey</span>
-              <svg className="inline-block ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-              </svg>
-            </button>
-
-            <button className="group px-8 py-4 border-2 border-secondary text-primary font-bold rounded-full hover:bg-secondary hover:text-primary transition-all duration-300">
-              <span>Learn More About Our Solutions</span>
-            </button>
-          </div>
 
           <p className="text-primary font-semibold mt-8 text-lg">
             Unlock proprietary value and scale your business to the next frontier.

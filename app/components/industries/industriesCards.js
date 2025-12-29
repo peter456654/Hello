@@ -7,6 +7,8 @@ const IndustriesCards = () => {
     {
       title: "AI-Healthcare",
       img: "https://codework-ebook.s3.us-east-1.amazonaws.com/codework-media/industry/Healthcare.jpg",
+      video:
+        "https://codework-ebook.s3.amazonaws.com/codework-media/Industries_videos/Hospital.mp4",
       description:
         "Our AI-powered healthcare solutions revolutionize diagnostics with precision and speed, enabling personalized treatment plans tailored to each patient.",
       link: "/ai-in-healthcare-you-must-know",
@@ -14,6 +16,8 @@ const IndustriesCards = () => {
     {
       title: " AI-Education",
       img: "https://codework-ebook.s3.us-east-1.amazonaws.com/codework-media/industry/education.webp",
+      video:
+        "https://codework-ebook.s3.amazonaws.com/codework-media/Industries_videos/school.mp4",
       description:
         "Explore unique insights into how AI in education empowers and transforms student learning experiences for a brighter future.",
       link: "/unique-ai-in-education",
@@ -22,6 +26,8 @@ const IndustriesCards = () => {
     {
       title: " AI-E-commerce",
       img: "https://codework-ebook.s3.us-east-1.amazonaws.com/codework-media/industry/AI-E-commerce.avif",
+      video:
+        "https://codework-ebook.s3.amazonaws.com/codework-media/Industries_videos/ECommerce.mp4",
       description:
         "Discover the secrets of integrating AI in e-commerce and unlock remarkable success for your business with our expert strategies.",
       link: "/ai-in-ecommerce",
@@ -29,6 +35,8 @@ const IndustriesCards = () => {
     {
       title: " AI-Finance",
       img: "https://codework-ebook.s3.us-east-1.amazonaws.com/codework-media/industry/finance.jpg",
+      video:
+        "https://codework-ebook.s3.amazonaws.com/codework-media/Industries_videos/Money.mp4",
       description:
         "Find out how new AI technologies in finance are empowering decisions and paving the way for a brighter, more efficient financial future.",
       link: "/new-ai-in-finance",
@@ -36,11 +44,39 @@ const IndustriesCards = () => {
     {
       title: "  AI-Data Security",
       img: "https://codework-ebook.s3.us-east-1.amazonaws.com/codework-media/industry/DataSecurity.avif",
+      video:
+        "https://codework-ebook.s3.amazonaws.com/codework-media/Industries_videos/Data%20security.mp4",
       description:
         "AI in data security refers to the use of artificial intelligence to detect, prevent, and respond to cybersecurity threats by analyzing patterns.",
       link: "/ai-in-data-security",
     },
   ];
+
+  const videoRefs = React.useRef([]);
+
+  const handleCardEnter = (index) => {
+    const video = videoRefs.current[index];
+    if (!video) return;
+    try {
+      video.currentTime = 0;
+      video.playbackRate = 0.6;
+      video.load();
+      const playPromise = video.play();
+      if (playPromise && typeof playPromise.catch === "function") {
+        playPromise.catch(() => {});
+      }
+    } catch {}
+  };
+
+  const handleCardLeave = (index) => {
+    const video = videoRefs.current[index];
+    if (!video) return;
+    try {
+      video.pause();
+      video.currentTime = 0;
+      video.playbackRate = 1;
+    } catch {}
+  };
 
   return (
     <div className="bg-secondary text-primary relative overflow-hidden px-4 py-20">
@@ -79,18 +115,38 @@ const IndustriesCards = () => {
       {/* Cards Grid */}
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
-          {cardData.map((card, idx) => (
-            <div
-              key={idx}
-              className="group bg-secondary/30 backdrop-blur-xl border border-primary/10 rounded-none overflow-hidden hover:bg-secondary/40 hover:border-primary/30 transition-all duration-500 transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/20 w-full max-w-sm h-full flex flex-col"
-            >
+          {cardData.map((card, idx) => {
+            const hasVideo = Boolean(card.video);
+            return (
+              <div
+                key={idx}
+                className="group bg-secondary/30 backdrop-blur-xl border border-primary/10 rounded-none overflow-hidden hover:bg-secondary/40 hover:border-primary/30 transition-all duration-500 transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/20 w-full max-w-sm h-full flex flex-col"
+                onMouseEnter={() => handleCardEnter(idx)}
+                onMouseLeave={() => handleCardLeave(idx)}
+                onTouchStart={() => handleCardEnter(idx)}
+              >
               {/* Image Section */}
               <div className="relative h-48 overflow-hidden">
                 <img
                   src={card.img}
                   alt={card.title}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                  className={`w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ${
+                    hasVideo ? "group-hover:opacity-0" : ""
+                  }`}
                 />
+                {hasVideo && (
+                  <video
+                    ref={(el) => {
+                      videoRefs.current[idx] = el;
+                    }}
+                    src={card.video}
+                    muted
+                    loop
+                    playsInline
+                    preload="metadata"
+                    className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 group-hover:scale-110 transition-all duration-700"
+                  />
+                )}
                 <div className="absolute inset-0 bg-gradient-to-t from-secondary/80 via-secondary/40 to-transparent"></div>
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
 
@@ -121,7 +177,8 @@ const IndustriesCards = () => {
 
               
             </div>
-          ))}
+            );
+          })}
         </div>
       </div>
 

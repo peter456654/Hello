@@ -13,8 +13,41 @@ export default function Navbar() {
   const [lastScrollY, setLastScrollY] = useState(0);
   const [hoveredLink, setHoveredLink] = useState(null);
   const dropdownTimeoutRef = useRef(null);
+  const dropdownVideoRefs = useRef(new Map());
   const [isNavHovered, setIsNavHovered] = useState(false);
   const [isDropdownHovered, setIsDropdownHovered] = useState(false);
+
+  const setDropdownVideoRef = (key) => (element) => {
+    if (element) {
+      dropdownVideoRefs.current.set(key, element);
+    } else {
+      dropdownVideoRefs.current.delete(key);
+    }
+  };
+
+  const playDropdownVideo = (key) => {
+    const video = dropdownVideoRefs.current.get(key);
+    if (!video) return;
+    try {
+      video.playbackRate = 0.6;
+      video.currentTime = 0;
+      video.load();
+      const playPromise = video.play();
+      if (playPromise && typeof playPromise.catch === "function") {
+        playPromise.catch(() => {});
+      }
+    } catch {}
+  };
+
+  const stopDropdownVideo = (key) => {
+    const video = dropdownVideoRefs.current.get(key);
+    if (!video) return;
+    try {
+      video.pause();
+      video.currentTime = 0;
+      video.playbackRate = 1;
+    } catch {}
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -137,26 +170,36 @@ export default function Navbar() {
           href: "/ai-in-healthcare-you-must-know",
           label: "AI-Healthcare",
           image: "https://codework-ebook.s3.us-east-1.amazonaws.com/codework-media/industry/Healthcare.jpg",
+          video:
+            "https://codework-ebook.s3.amazonaws.com/codework-media/Industries_videos/Hospital.mp4",
         },
         {
           href: "/unique-ai-in-education",
           label: "AI-Education",
           image: "https://codework-ebook.s3.us-east-1.amazonaws.com/codework-media/industry/education.webp",
+          video:
+            "https://codework-ebook.s3.amazonaws.com/codework-media/Industries_videos/school.mp4",
         },
         {
           href: "/ai-in-ecommerce",
           label: "AI-E-commerce",
           image: "https://codework-ebook.s3.us-east-1.amazonaws.com/codework-media/industry/AI-E-commerce.avif",
+          video:
+            "https://codework-ebook.s3.amazonaws.com/codework-media/Industries_videos/ECommerce.mp4",
         },
         {
           href: "/new-ai-in-finance",
           label: "AI-Finance",
           image: "https://codework-ebook.s3.us-east-1.amazonaws.com/codework-media/industry/finance.jpg",
+          video:
+            "https://codework-ebook.s3.amazonaws.com/codework-media/Industries_videos/Money.mp4",
         },
         {
           href: "/ai-in-data-security",
           label: "AI-Data Security",
           image: "https://codework-ebook.s3.us-east-1.amazonaws.com/codework-media/industry/DataSecurity.avif",
+          video:
+            "https://codework-ebook.s3.amazonaws.com/codework-media/Industries_videos/Data%20security.mp4",
         },
       ],
     },
@@ -381,9 +424,10 @@ export default function Navbar() {
                       </h3>
                       <div className="w-10 sm:w-12 h-0.5 bg-secondary rounded-full mx-auto md:mx-0"></div>
                     </div>
-                    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-6">
+                      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-6">
                       {navLinks[isDropdownOpen].dropdown.map((dropdownItem, idx) => {
                         const isExternalLink = dropdownItem.href.startsWith('http');
+                        const hasVideo = Boolean(dropdownItem.video);
                         const card = (
                           <div className={`overflow-hidden transition-all duration-300 hover:scale-105 ${pathname === dropdownItem.href ? "ring-2 ring-secondary" : ""}`}>
                             <div className="relative w-full h-28 sm:h-32 md:h-36">
@@ -391,7 +435,9 @@ export default function Navbar() {
                                 <img
                                   src={dropdownItem.image}
                                   alt={dropdownItem.label}
-                                  className="w-full h-full object-cover transition-transform duration-500"
+                                  className={`w-full h-full object-cover transition-transform duration-500 ${
+                                    hasVideo ? "group-hover:opacity-0" : ""
+                                  }`}
                                 />
                               ) : (
                                 <Image
@@ -399,7 +445,20 @@ export default function Navbar() {
                                   alt={dropdownItem.label}
                                   width={260}
                                   height={160}
-                                  className="w-full h-full object-cover transition-transform duration-500"
+                                  className={`w-full h-full object-cover transition-transform duration-500 ${
+                                    hasVideo ? "group-hover:opacity-0" : ""
+                                  }`}
+                                />
+                              )}
+                              {hasVideo && (
+                                <video
+                                  ref={setDropdownVideoRef(dropdownItem.href)}
+                                  src={dropdownItem.video}
+                                  muted
+                                  loop
+                                  playsInline
+                                  preload="metadata"
+                                  className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-all duration-500"
                                 />
                               )}
                             </div>
@@ -418,6 +477,11 @@ export default function Navbar() {
                               target="_blank"
                               rel="noopener noreferrer"
                               className="group"
+                              onMouseEnter={() => playDropdownVideo(dropdownItem.href)}
+                              onMouseLeave={() => stopDropdownVideo(dropdownItem.href)}
+                              onFocus={() => playDropdownVideo(dropdownItem.href)}
+                              onBlur={() => stopDropdownVideo(dropdownItem.href)}
+                              onTouchStart={() => playDropdownVideo(dropdownItem.href)}
                             >
                               {card}
                             </a>
@@ -428,6 +492,11 @@ export default function Navbar() {
                             key={`${dropdownItem.href}-${idx}`}
                             href={dropdownItem.href}
                             className="group"
+                            onMouseEnter={() => playDropdownVideo(dropdownItem.href)}
+                            onMouseLeave={() => stopDropdownVideo(dropdownItem.href)}
+                            onFocus={() => playDropdownVideo(dropdownItem.href)}
+                            onBlur={() => stopDropdownVideo(dropdownItem.href)}
+                            onTouchStart={() => playDropdownVideo(dropdownItem.href)}
                           >
                             {card}
                           </Link>
