@@ -1,7 +1,7 @@
 "use client";
 import Image from 'next/image';
 import Link from 'next/link';
-import React from "react";
+import React, { useState } from "react";
 
 export default function Finance() {
   // Industry cards data (excluding Finance since this is the Finance page)
@@ -40,6 +40,45 @@ export default function Finance() {
       ),
     },
   ];
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [errors, setErrors] = useState({});
+  const [loading, setLoading] = useState(false);
+  const [success, setSuccess] = useState("");
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setSuccess("");
+    const errs = {};
+    if (!name.trim()) errs.name = "Name is required";
+    if (!email.trim() || !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) errs.email = "Valid email is required";
+    if (!phone.trim()) errs.phone = "Phone number is required";
+    if (!/^\d+$/.test(phone)) errs.phone = "Only numbers allowed";
+    setErrors(errs);
+    if (Object.keys(errs).length) return;
+    setLoading(true);
+    try {
+      const res = await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/marketing_site/add_contact_details`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name, email, phone_number: phone })
+      });
+      if (res.ok) {
+        setSuccess("Thanks! We will contact you soon.");
+        setName("");
+        setEmail("");
+        setPhone("");
+        setErrors({});
+      } else {
+        const data = await res.json().catch(() => null);
+        setErrors({ form: data?.message || "Something went wrong" });
+      }
+    } catch {
+      setErrors({ form: "Network error. Please try again." });
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
     <div className="bg-secondary text-primary min-h-screen">
@@ -119,39 +158,53 @@ export default function Finance() {
               Connect with our finance AI experts to learn how we can help transform your financial services.
             </p>
             
-            <form className="space-y-4">
+            {success && <p className="text-green-600 mb-4">{success}</p>}
+            {errors.form && <p className="text-red-500 mb-4">{errors.form}</p>}
+            <form className="space-y-4" onSubmit={handleSubmit}>
               <div>
                 <label className="block text-sm font-medium text-primary/80 mb-2">Full name</label>
                 <input 
                   type="text" 
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
                   placeholder="John Carter"
                   className="w-full px-4 py-3 rounded-lg bg-primary/10 border border-primary/20 text-primary placeholder-primary/50 focus:outline-none focus:border-primary"
                 />
+                {errors.name && <p className="text-red-500 text-sm mt-1">{errors.name}</p>}
               </div>
               
               <div>
                 <label className="block text-sm font-medium text-primary/80 mb-2">Email address</label>
                 <input 
                   type="email" 
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                   placeholder="example@yourdomain.com"
                   className="w-full px-4 py-3 rounded-lg bg-primary/10 border border-primary/20 text-primary placeholder-primary/50 focus:outline-none focus:border-primary"
                 />
+                {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email}</p>}
               </div>
               
               <div>
                 <label className="block text-sm font-medium text-primary/80 mb-2">Phone number</label>
                 <input 
                   type="tel" 
+                  inputMode="numeric"
+                  pattern="[0-9]*"
+                  value={phone}
+                  onChange={(e) => setPhone(e.target.value.replace(/\D/g, ""))}
                   placeholder="(123) 456-7890"
                   className="w-full px-4 py-3 rounded-lg bg-primary/10 border border-primary/20 text-primary placeholder-primary/50 focus:outline-none focus:border-primary"
                 />
+                {errors.phone && <p className="text-red-500 text-sm mt-1">{errors.phone}</p>}
               </div>
               
               <button 
                 type="submit"
-                className="w-full bg-transparent border-2 border-primary text-primary font-bold py-3 px-6 rounded-none transition-colors duration-200 hover:bg-primary hover:text-primary"
+                disabled={loading}
+                className={`w-full bg-transparent border-2 border-primary text-primary font-bold py-3 px-6 rounded-none transition-colors duration-200 hover:bg-primary hover:text-primary ${loading ? "opacity-60 cursor-not-allowed" : ""}`}
               >
-                Receive a call →
+                {loading ? "Submitting..." : "Receive a call →"}
               </button>
             </form>
           </div>
