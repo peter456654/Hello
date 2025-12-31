@@ -1,6 +1,5 @@
 import React from 'react'
 import Blog31 from '../components/blogs/blog31'
-import { Metadata } from 'next'
 import UndergroundFaq from '../components/FAQsforBlog/undergroundFaq'
 
 export const metadata = {

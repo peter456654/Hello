@@ -1,8 +1,6 @@
 import React from 'react'
 import Blog33 from '@/app/components/blogs/blog33'
-import { Metadata } from 'next'
 import CrowdManagement from '@/app/components/FAQsforBlog/crowdManagement'
-
 export const metadata = {
   title: 'Crowd Management: How to Keep Large Gatherings Safe and Organized',
   description: 'Learn how to plan, monitor, and manage large crowds effectively. Discover real strategies, safety tips, and tech tools for stress-free event management.',
@@ -19,6 +17,7 @@ export const metadata = {
     'crowd behavior analysis'
   ]
 }
+
 
 const page = () => {
   return (
