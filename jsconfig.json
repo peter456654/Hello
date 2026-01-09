@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "compilerOptions": {
     "paths": {
@@ -5,3 +6,12 @@
     }
   }
 }
+=======
+{
+  "compilerOptions": {
+    "paths": {
+      "@/*": ["./*"]
+    }
+  }
+}
+>>>>>>> 548ceb2ef65d616848734ad0bb90a270266ec249
